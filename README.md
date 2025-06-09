@@ -133,8 +133,6 @@ O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudfla
 
 ─►2- Cloudflare Proxy Interno (127.0.0.1)
 
-**(Resolução) Domínio de destino via Upstream seguro (com cache otimizado)**
-
 Mesmo sem DoH no lado do usuário, a privacidade é garantida dentro do Kraken com criptografia interna, upstreams seguros e filtragem baseada em reputação.
 
 
