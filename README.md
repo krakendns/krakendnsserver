@@ -30,7 +30,7 @@ Filtros anti-phishing atualizados
 Proteção contra tracking opcional
 Listas personalizadas de bloqueio
 
-#Como usar no Linux:
+## Como usar no Linux:
 
 **Método Rápido (uma linha)**:
 
@@ -70,14 +70,8 @@ options timeout:2
 options attempts:3
 EOF
 
-# Tornar imutável
+**Tornar imutável**
 sudo chattr +i /etc/resolv.conf
-
-echo "KrakenDNS instalado com sucesso!"
-echo "Testando resolução..."
-dig @144.202.57.221 google.com +short
-CentOS/RHEL:
-bash#!/bin/bash
 
 **sistemas Red Hat**
 
