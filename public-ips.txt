@@ -1,0 +1,7 @@
+# Lista pública dos servidores KrakenDNS
+
+144.202.57.221   # Chicago 🇺🇸
+162.243.238.171  # Nova York 🇺🇸
+45.77.28.252     # Tóquio 🇯🇵
+94.237.14.77     # Helsinque 🇫🇮
+139.180.135.67   # Singapura 🇸🇬
