@@ -119,28 +119,28 @@ O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudfla
 -**Upstreams criptografados** (DoT e DNSCrypt)
 
 
-
 ### 🔁 Fluxo de uma consulta no KrakenDNS
 
 ```text
 [Usuário]
-   ↓
+ ↓
 (Consulta DNS)
-   ↓
+ ↓
 [KrakenDNS IP: 144.202.57.221]
-   ↓
+ ↓
 [Camada de Segurança]
-   ├─► DNSCrypt Local (127.0.0.1)
-   └─► Cloudflare Proxy Interno
-         ↓
+ ├─► DNSCrypt Local (127.0.0.1)
+ └─► Cloudflare Proxy Interno
+       ↓
 (Resolução)
-   ↓
+ ↓
 [Domínio de destino via Upstream seguro (com cache otimizado)]
+
 
 Mesmo sem DoH no lado do usuário, a privacidade é garantida dentro do Kraken com criptografia interna, upstreams seguros e filtragem baseada em reputação.
 
 
-## 🔮Futuro do DoH no Kraken
+## Futuro do DoH no Kraken
 
 O suporte ao DoH **está em desenvolvimento experimental**, mas será **ativado apenas quando a estabilidade, performance e privacidade puderem ser mantidas em alto nível**, sem comprometer a experiência dos usuários.
 
