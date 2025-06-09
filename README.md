@@ -98,24 +98,26 @@ pihole restartdns
 
 O protocolo **DNS-over-HTTPS (DoH)** é uma tecnologia importante para proteger a privacidade dos usuários contra interceptações, especialmente em redes públicas. Contudo, o KrakenDNS **optou tecnicamente por não utilizar DoH como padrão** neste momento por motivos **técnicos e de segurança**:
 
-**Ataques TLS**: Certificados podem ser comprometidos
-**Incompatibilidade**: Cloudflare Proxy quebra Android e IOS
-**Exposição de serviços**: Painéis administrativos ficam acessíveis
+-**Ataques TLS**: Certificados podem ser comprometidos
+
+-**Incompatibilidade**: Cloudflare Proxy quebra Android e IOS
+
+-**Exposição de serviços**: Painéis administrativos ficam acessíveis
 
 
 ![image](https://github.com/user-attachments/assets/f0291917-71a8-47bf-9f9c-65314c33f15c)
 
 
-**Nossa solução**: Utilizamos DNSCrypt e Cloudflare poxy internamente para criptografia entre servidores, oferecendo segurança sem as vulnerabilidades web.
+## Nossa solução
 
+O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudflare poxy internamente para criptografia entre servidores, oferecendo segurança sem as vulnerabilidades web.
 
-**Nossa solução**
+-**DNSCrypt Local (127.0.0.1)** para encriptação dentro do servidor
 
-O KrakenDNS implementa uma **infraestrutura de criptografia interna** usando:
+-**Proxy Cloudflare** (modo interno) para ofuscar e proteger o IP real
 
-**DNSCrypt Local (127.0.0.1)** para encriptação dentro do servidor
-**Proxy Cloudflare** (modo interno) para ofuscar e proteger o IP real
-**Upstreams criptografados** (DoT e DNSCrypt)
+-**Upstreams criptografados** (DoT e DNSCrypt)
+
 
 
 ### 🔁 Fluxo de uma consulta no KrakenDNS
