@@ -92,7 +92,7 @@ server=139.180.135.67#53
 
 pihole restartdns
 
-Por que o KrakenDNS **não utiliza DoH como padrão**
+## Por que o KrakenDNS **não utiliza DoH como padrão**
 
 O protocolo **DNS-over-HTTPS (DoH)** é uma tecnologia importante para proteger a privacidade dos usuários contra interceptações, especialmente em redes públicas. Contudo, o KrakenDNS **optou tecnicamente por não utilizar DoH como padrão** neste momento por motivos **técnicos e de segurança**:
 
