@@ -30,7 +30,7 @@ Filtros anti-phishing atualizados
 Proteção contra tracking opcional
 Listas personalizadas de bloqueio
 
-#Como usar no Linux**:
+#Como usar no Linux:
 
 **Método Rápido (uma linha)**:
 
