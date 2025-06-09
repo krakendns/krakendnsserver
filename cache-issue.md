@@ -29,5 +29,17 @@ desabilitar o cache local é a melhor opção.
 - Transparência operacional fortalece a confiança no KrakenDNS.
 
 
+**Código Nginx**
 
+### Apenas cache para domínios permitidos
+
+```nginx
+location ~* "^/dns-query" {
+    if ($arg_name ~* "(malware|anúncios|tracker)") {
+        proxy_pass http://adguard;
+        break;
+    }
+    # Cache só para domínios limpos
+    proxy_cache_valid 200 5m;
+}
 
