@@ -177,16 +177,25 @@ O KrakenDNS é um projeto independente, sem financiamento externo. Toda ajuda é
 
 Aqui estão áreas onde sua ajuda pode fazer a diferença:
 
-Documentação em outros idiomas
-Guias de instalação local para Android, iOS e roteadores
-Instaladores rápidos (bash, .deb, .apk, .yaml)
-Listas de bloqueio regionais baseadas em DNS
-Regras de firewall inteligentes (iptables, nftables, dnsdist)
-Scripts para mitigar DoS e DNSKEY flood
-Relatórios de desempenho de novas regiões
-Sugestões de provedores VPS confiáveis e compatíveis com kernel avançado.
-Materiais educativos sobre privacidade e DNS seguro
-Colaboração com comunidades técnicas e universidades
+1 - Documentação em outros idiomas
+
+2 - Guias de instalação local para Android, iOS e roteadores
+
+3 - Instaladores rápidos (bash, .deb, .apk, .yaml)
+
+4 - Listas de bloqueio regionais baseadas em DNS
+
+5 - Regras de firewall inteligentes
+
+6 - Scripts para mitigar DoS e DNSKEY flood
+
+7 - Relatórios de desempenho de novas regiões
+
+8 - Sugestões de provedores VPS confiáveis e compatíveis com kernel avançado.
+
+9 - Materiais educativos sobre privacidade e DNS seguro
+
+10- Colaboração com comunidades técnicas e universidades
 
 ⚠️ Importante: o KrakenDNS não aceitará integrações com sistemas que envolvam rastreamento, coleta de dados pessoais, ou interesses corporativos que contradigam nossos princípios.
 
