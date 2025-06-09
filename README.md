@@ -20,6 +20,7 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 
 ## Por que escolher o Kraken DNS? 🦑
 Kraken DNS é um serviço de DNS público gratuito projetado para desempenho excepcional:
+
 **Latência ultra-baixa**: Otimizado garantindo respostas rápidas.
 **Cache**: Acelera consultas frequentes.
 
