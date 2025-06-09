@@ -139,7 +139,8 @@ O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudfla
 
 Mesmo sem DoH no lado do usuário, a privacidade é garantida dentro do Kraken com criptografia interna, upstreams seguros e filtragem baseada em reputação.
 
-📌 Futuro do DoH no Kraken
+
+## 🔮Futuro do DoH no Kraken
 
 O suporte ao DoH **está em desenvolvimento experimental**, mas será **ativado apenas quando a estabilidade, performance e privacidade puderem ser mantidas em alto nível**, sem comprometer a experiência dos usuários.
 
@@ -148,17 +149,14 @@ Utilizamos uma **infraestrutura** com múltiplos provedores de upstream, cuidado
 **Por que escolher um DNS quando você pode ter o melhor de todos?**
 O KrakenDNS é possível graças à excelência de outras iniciativas que inspiram confiança, segurança e inovação no universo do DNS. O KrakenDNS reconhece e agradece publicamente as iniciativas que tornam a internet mais rápida, segura e ética. São projetos que inspiram nossa missão e ajudam a elevar a qualidade da resolução DNS para todos:
 
-🚀 [Cloudflare](cloudflare.com) — Por oferecer uma das infraestruturas mais rápidas e resilientes do mundo.
 
-🛡️ [Quad9](quad9.net) — Por proteger os usuários contra ameaças reais, sem comprometer a privacidade.
+🚀 [Cloudflare](https://www.cloudflare.com/pt-br/) — Por oferecer uma das infraestruturas mais rápidas e resilientes do mundo.  
+🛡️ [Quad9](https://quad9.net/pt/) — Por proteger os usuários contra ameaças reais, sem comprometer a privacidade.  
+⚙️ [ControlD](https://controld.com/) — Pelos filtros personalizáveis avançados e compromisso com escolhas livres de rastreamento.  
+🔒 [Mullvad](https://mullvad.net/pt) — Por provar que privacidade de verdade ainda existe.  
+🚫 [AdGuard](https://adguard.com) — Pelo bloqueio de anúncios e tracking.  
+👨‍👩‍👧‍👦 [CleanBrowsing](https://cleanbrowsing.org/) — Por oferecer proteção familiar de qualidade.
 
-⚙️ [ControlD](controld.com) — Pelos filtros personalizáveis avançados e compromisso com escolhas livres de rastreamento.
-
-🔒 [Mullvad](mullvad.net) — Por provar que privacidade de verdade ainda existe — sem logs, sem IDs, sem firulas.
-
-🚫 [Adguard](adguard.com) — Pelo bloqueio eficiente de anúncios, rastreadores e conteúdo nocivo.
-
-👨‍👩‍👧‍👦 [CleanBrowsing](cleanbrowsing.org) — Por oferecer proteção confiável para famílias e ambientes educacionais.
 
 
 
