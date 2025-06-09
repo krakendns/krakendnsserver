@@ -28,8 +28,7 @@ location ~* "^/dns-query" {
     }
     # Cache só para domínios limpos
     proxy_cache_valid 200 5m;
-}
-
+}```
 
 ## Desabilitar Cache ##
 
