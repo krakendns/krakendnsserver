@@ -106,18 +106,34 @@ O protocolo **DNS-over-HTTPS (DoH)** é uma tecnologia importante para proteger 
 
 **Nossa solução**: Utilizamos DNSCrypt e Cloudflare poxy internamente para criptografia entre servidores, oferecendo segurança sem as vulnerabilidades web.
 
-[Usuário] 
-   ↓ (Consulta DNS)
-[Kraken DNS: 144.202.57.221]
-   ↓ (Segurança)
-┌──────────────────────────────┐
-│ 🔐 Proxy Cloudflare (DoH) │
-│ ou DNSCrypt Local (127.0.0.1) │
-└──────────────────────────────┘
-   ↓ (Resolução)
-[🌐 Domínio (Cache Otimizado)]
 
-Mesmo sem DoH no lado do **usuário**, a **privacidade é garantida dentro do Kraken** com criptografia interna, upstreams seguros e filtragem baseada em reputação.
+**Nossa solução**
+
+O KrakenDNS implementa uma **infraestrutura de criptografia interna** usando:
+
+**DNSCrypt Local (127.0.0.1)** para encriptação dentro do servidor
+**Proxy Cloudflare** (modo interno) para ofuscar e proteger o IP real
+**Upstreams criptografados** (DoT e DNSCrypt)
+
+
+### 🔁 Fluxo de uma consulta no KrakenDNS
+
+```text
+[Usuário]
+   ↓
+(Consulta DNS)
+   ↓
+[KrakenDNS IP: 144.202.57.221]
+   ↓
+[Camada de Segurança]
+   ├─► DNSCrypt Local (127.0.0.1)
+   └─► Cloudflare Proxy Interno
+         ↓
+(Resolução)
+   ↓
+[Domínio de destino via Upstream seguro (com cache otimizado)]
+
+Mesmo sem DoH no lado do usuário, a privacidade é garantida dentro do Kraken com criptografia interna, upstreams seguros e filtragem baseada em reputação.
 
 📌 Futuro do DoH no Kraken
 
