@@ -38,17 +38,15 @@ echo "nameserver 144.202.57.221" | sudo tee /etc/resolv.conf
 
 **Método Permanente (systemd-resolved)**:
 
-Configurar DNS principal:
+**Configurar DNS principal**:
 
 sudo systemctl stop systemd-resolved
 echo "DNS=144.202.57.221 162.243.238.171" | sudo tee -a /etc/systemd/network/dns.conf
 sudo systemctl start systemd-resolved
 
-Verificar configuração
+**Verificar configuração**
 
 resolvectl status
-
-**Testes**
 
 **Testar resolução**
 
@@ -57,31 +55,6 @@ dig @144.202.57.221 google.com
 **Testar latência**
 
 ping -c 4 144.202.57.221
-
-**Forma recomendada para Pi-hole (modo padrão, porta 53)**
-
-sudo nano /etc/dnsmasq.d/99-kraken.conf
-
-server=144.202.57.221#53
-server=162.243.238.171#53
-server=5.22.215.185#53
-server=45.77.28.252#53
-server=94.237.14.77#53
-server=139.180.135.67#53
-
-pihole restartdns
-
-
-**Ubuntu/Debian**:
-
-
-bash#!/bin/bash
-
-**Salvar como install-kraken.sh**
-
-set -e
-
-echo "Instalando KrakenDNS..."
 
 **Backup da configuração atual**
 
@@ -106,14 +79,24 @@ dig @144.202.57.221 google.com +short
 CentOS/RHEL:
 bash#!/bin/bash
 
-
-
 **sistemas Red Hat**
 
 systemctl stop NetworkManager
 echo -e "DNS1=144.202.57.221\nDNS2=162.243.238.171" >> /etc/sysconfig/network-scripts/ifcfg-eth0
 systemctl start NetworkManager
 
+**Forma recomendada para Pi-hole (modo padrão, porta 53)**
+
+sudo nano /etc/dnsmasq.d/99-kraken.conf
+
+server=144.202.57.221#53
+server=162.243.238.171#53
+server=5.22.215.185#53
+server=45.77.28.252#53
+server=94.237.14.77#53
+server=139.180.135.67#53
+
+pihole restartdns
 
 Por que o KrakenDNS **não utiliza DoH como padrão**
 
