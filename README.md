@@ -30,7 +30,7 @@ Filtros anti-phishing atualizados
 Proteção contra tracking opcional
 Listas personalizadas de bloqueio
 
-**Como usar no Linux**:
+#Como usar no Linux**:
 
 **Método Rápido (uma linha)**:
 
@@ -38,20 +38,24 @@ echo "nameserver 144.202.57.221" | sudo tee /etc/resolv.conf
 
 **Método Permanente (systemd-resolved)**:
 
-# Configurar DNS principal
+Configurar DNS principal:
+
 sudo systemctl stop systemd-resolved
 echo "DNS=144.202.57.221 162.243.238.171" | sudo tee -a /etc/systemd/network/dns.conf
 sudo systemctl start systemd-resolved
 
-# Verificar configuração
+Verificar configuração
+
 resolvectl status
 
 **Testes**
 
-# Testar resolução
+**Testar resolução**
+
 dig @144.202.57.221 google.com
 
-# Testar latência
+**Testar latência**
+
 ping -c 4 144.202.57.221
 
 **Forma recomendada para Pi-hole (modo padrão, porta 53)**
@@ -72,17 +76,20 @@ pihole restartdns
 
 
 bash#!/bin/bash
-# Salvar como install-kraken.sh
+
+**Salvar como install-kraken.sh**
+
 set -e
 
-echo "🐙 Instalando KrakenDNS..."
+echo "Instalando KrakenDNS..."
 
-# Backup da configuração atual
+**Backup da configuração atual**
+
 sudo cp /etc/resolv.conf /etc/resolv.conf.backup
 
-# Configurar KrakenDNS
+**Configurar KrakenDNS**
 sudo tee /etc/resolv.conf << EOF
-# KrakenDNS Configuration
+KrakenDNS Configuration
 nameserver 144.202.57.221
 nameserver 162.243.238.171
 nameserver 45.77.28.252
@@ -93,8 +100,8 @@ EOF
 # Tornar imutável
 sudo chattr +i /etc/resolv.conf
 
-echo "✅ KrakenDNS instalado com sucesso!"
-echo "🧪 Testando resolução..."
+echo "KrakenDNS instalado com sucesso!"
+echo "Testando resolução..."
 dig @144.202.57.221 google.com +short
 CentOS/RHEL:
 bash#!/bin/bash
@@ -102,7 +109,6 @@ bash#!/bin/bash
 
 
 **sistemas Red Hat**
-
 
 systemctl stop NetworkManager
 echo -e "DNS1=144.202.57.221\nDNS2=162.243.238.171" >> /etc/sysconfig/network-scripts/ifcfg-eth0
