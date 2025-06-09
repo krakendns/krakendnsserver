@@ -121,19 +121,19 @@ O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudfla
 
 ### 🔁 Fluxo de uma consulta no KrakenDNS
 
-**[Usuário]**
-↓
-(Consulta DNS)
-↓
-[KrakenDNS IP: 144.202.57.221]
-↓
-[Camada de Segurança]
-├─ DNSCrypt Local (127.0.0.1)
-└─ Cloudflare Proxy Interno
-↓
-(Resolução)
-↓
-[Domínio de destino via Upstream seguro (com cache otimizado)]
+**[Usuário]** ─►
+
+─► **(Consulta DNS)**
+
+─► **[KrakenDNS IP: 144.202.57.221]**
+
+**[Camada de Segurança]**
+
+─►1- DNSCrypt Local (127.0.0.1) 
+
+─►2- Cloudflare Proxy Interno (127.0.0.1)
+
+**(Resolução) Domínio de destino via Upstream seguro (com cache otimizado)**
 
 Mesmo sem DoH no lado do usuário, a privacidade é garantida dentro do Kraken com criptografia interna, upstreams seguros e filtragem baseada em reputação.
 
