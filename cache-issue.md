@@ -14,22 +14,6 @@ Cliente → KrakenDNS Cache → Resposta Direta  (Pula AdGuard/ControlD)
 
 Cliente → KrakenDNS → AdGuard/ControlD → Filtros → Resposta
 
-## Soluções
-
-**Opção 1 - Cache Inteligente nginx**
-
-### Apenas cache para domínios permitidos
-
-```nginx
-location ~* "^/dns-query" {
-    if ($arg_name ~* "(malware|anúncios|tracker)") {
-        proxy_pass http://adguard;
-        break;
-    }
-    # Cache só para domínios limpos
-    proxy_cache_valid 200 5m;
-}```
-
 ## Desabilitar Cache ##
 
 desabilitar o cache local é a melhor opção.
