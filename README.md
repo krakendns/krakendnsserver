@@ -114,9 +114,9 @@ O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudfla
 
 -**DNSCrypt Local (127.0.0.1)** para encriptação dentro do servidor
 
--**Proxy Cloudflare** (modo interno) para ofuscar e proteger o IP real
+-**Proxy Cloudflare (127.0.0.1)** para ofuscar e proteger o IP real
 
--**Upstreams criptografados** (DoT e DNSCrypt)
+-**Upstreams criptografados** 
 
 
 ### 🔁 Fluxo de uma consulta no KrakenDNS
