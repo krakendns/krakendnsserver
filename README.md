@@ -24,7 +24,7 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 
 ## Status
 
-[![](https://img.shields.io/badge/KrakenDNS-Status%3A%20Online-brightgreen)](https://status.uptimerobot.com/eAyelEtTt)
+[![](https://img.shields.io/badge/KrakenDNS-Status%3A%20Online-brightgreen)](https://stats.uptimerobot.com/eAyelEtTEt)
 
 
 
