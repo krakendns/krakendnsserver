@@ -225,3 +225,18 @@ Nosso compromisso com a privacidade e liberdade dos usuários exige um esforço 
 **Pesquisadores responsáveis** são bem-vindos e podem entrar em contato diretamente conosco.
 
 krakendnsserver@protonmail.com
+
+## 🆕 Atualização de Infraestrutura – 10/06/2025
+
+Olá, usuários do KrakenDNS! 🐙
+
+Informamos que um novo servidor está **oficialmente online**:
+
+- 🌍 **KrakenDNS Amsterdam**
+- IP: 95.179.151.156
+
+Nosso novo DNS foi otimizado para máxima estabilidade e responsividade, superando outras regiões e se tornando o **favorito da equipe KrakenDNS**.
+
+## ⚠️ Atualização sobre o DNS de Chicago
+
+Desativamos temporariamente o servidor de DNS em Chicago devido ao baixo tráfego e à migração para uma infraestrutura mais eficiente.
