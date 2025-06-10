@@ -22,6 +22,10 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 | 🇳🇱 Amsterdam     | `95.179.151.156`| Vultr          |
 
 
+## Status
+
+[![](https://img.shields.io/badge/KrakenDNS-Status%3A%20Online-brightgreen)](https://status.uptimerobot.com/eAyelEtTt)
+
 
 
 
