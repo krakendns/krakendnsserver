@@ -7,16 +7,23 @@ DNS público, resiliente e privado
 
 KrakenDNS é um projeto independente de resolução DNS que oferece **respostas rápidas**, **criptografia moderna** e **nenhum registro de atividades**. Ideal para usuários que desejam **privacidade**, **velocidade global** e proteção.
 
-🌐 Endereços Globais
 
-| Região        | IP                   | Provedor         |
-|---------------|----------------------|------------------|
-| 🇺🇸 Chicago    | `144.202.57.221`     | Vultr            |
-| 🇺🇸 Nova York  | `162.243.238.171`    | DigitalOcean     |
-| 🇩🇪 Frankfurt  | `5.22.215.185`       | UpCloud          |
-| 🇯🇵 Tóquio     | `45.77.28.252`       | Vultr            |
-| 🇫🇮 Finlândia  | `94.237.14.77`       | UpCloud          |
-| 🇸🇬 Singapura  | `139.180.135.67`     | Vultr            |
+
+
+## 🌐 Endereços Globais – KrakenDNS
+
+| Região         | IP               | Provedor       |
+|----------------|------------------|----------------|
+| 🇺🇸 US New York  | `162.243.238.171`| DigitalOcean   |
+| 🇩🇪 Frankfurt     | `5.22.215.185`   | UpCloud        |
+| 🇯🇵 Tokyo         | `45.77.28.252`   | Vultr          |
+| 🇫🇮 Finland       | `94.237.14.77`   | UpCloud        |
+| 🇸🇬 Singapore     | `139.180.135.67` | Vultr          |
+| 🇳🇱 Amsterdam     | `95.179.151.156`| Vultr          |
+
+
+
+
 
 ## Por que escolher o Kraken DNS? 🦑
 Kraken DNS é um serviço de DNS público gratuito projetado para desempenho excepcional:
