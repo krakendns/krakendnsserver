@@ -15,9 +15,9 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 | Região         | IP               | Provedor       |
 |----------------|------------------|----------------|
 | 🇺🇸 US New York  | `162.243.238.171`| DigitalOcean   |
-| 🇩🇪 Frankfurt     | `5.22.215.185`   | UpCloud        |
+| 🇩🇪 Frankfurt     | `167.172.160.4`   | DigitalOcean |
 | 🇯🇵 Tokyo         | `45.77.28.252`   | Vultr          |
-| 🇫🇮 Finland       | `94.237.14.77`   | UpCloud        |
+| 🇫🇮 Finland       | `❌❌`   |         |❌❌
 | 🇸🇬 Singapore     | `139.180.135.67` | Vultr          |
 | 🇳🇱 Amsterdam     | `95.179.151.156`| Vultr          |
 
@@ -92,15 +92,14 @@ systemctl stop NetworkManager
 echo -e "DNS1=95.179.151.156\nDNS2=162.243.238.171" >> /etc/sysconfig/network-scripts/ifcfg-eth0
 systemctl start NetworkManager
 
-**Forma recomendada para Pi-hole (modo padrão, porta 53)**
+## Forma recomendada para Pi-hole (modo padrão, porta 53)
 
 sudo nano /etc/dnsmasq.d/99-kraken.conf
 
 server=95.179.151.156#53
 server=162.243.238.171#53
-server=5.22.215.185#53
+server=167.172.160.4#53
 server=45.77.28.252#53
-server=94.237.14.77#53
 server=139.180.135.67#53
 
 pihole restartdns
@@ -244,3 +243,19 @@ Nosso novo DNS foi otimizado para máxima estabilidade e responsividade, superan
 ## ⚠️ Atualização sobre o DNS de Chicago
 
 Desativamos temporariamente o servidor de DNS em Chicago devido ao baixo tráfego e à migração para uma infraestrutura mais eficiente.
+
+## ❌Relatório de Incidente – UpCloud (9 e 10 de Junho de 2025)
+
+Após instabilidade, o servidor Frankfurt (Alemanha) foi restabelecido com sucesso pela DigitalOcean. Testamos a infraestrutura da UpCloud para expandir o KrakenDNS, mas infelizmente os servidores apresentaram inconsistência nas respostas DNS, falhas inesperadas e suporte limitado à personalização de rede. Decidimos encerrar as operações na UpCloud e focar em provedores confiáveis e escaláveis.
+
+**Linha do tempo dos problemas:** 
+
+
+**09/06** - Falha temporária no **sistema de pagamento** da UpCloud; saldo ficou marcado como “inválido”, causando instabilidade administrativa.                                             
+**09/06 à noite** - VPS de **Finlândia** apresentaram sinais de lentidão. Testes com `dig` mostraram falhas de resposta e queries recusadas.                                             
+**10/06 (manhã)** - As VPS foram **desligadas sem aviso claro**, embora o painel indicasse “ativo”. A comunicação com o suporte foi lenta e evasiva.                                                   
+**10/06 (tarde)** - Suporte afirmou que não havia bloqueio de rede, mas os serviços continuavam **recusando requisições externas (status REFUSED)** mesmo com firewall correto.                        
+**10/06 (noite)** - Confirmado que **não era um erro do AdGuardHome ou do sistema**. Diagnóstico aponta infraestrutura da UpCloud como instável e com comportamento inconsistente de rede. 
+
+Devido a instabilidades graves nos VPS (não relacionadas à configuração local), suporte insuficiente e uma rede pública não confiável para DNS de produção, migrarmos para a DigitalOcean. Estamos buscando provedores na região entre Helsinki e Suécia para otimizar o serviço. Agradecemos a paciência e manteremos atualizações! 🦑 Mesmo com a reputação de ser econômica e limitada, a **Contabo** entregou respostas consistentes e previsíveis, um destaque valioso.
+
