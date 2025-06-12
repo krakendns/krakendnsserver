@@ -3,6 +3,6 @@
 95.179.151.156   # Amsterdam 
 162.243.238.171  # Nova York 
 45.77.28.252     # Tokyo 
-94.237.14.77     # Helsinque ❌
 167.172.160.4    # Frankfurt
-139.180.135.67   # Singapura 
+139.180.135.67   # Singapura
+172.234.100.170  #Sweden	
