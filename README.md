@@ -12,14 +12,14 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 
 ## 🌐 Endereços Globais – KrakenDNS
 
-| Região         | IP               | Provedor       |
-|----------------|------------------|----------------|
-| 🇺🇸 US New York  | `162.243.238.171`| DigitalOcean   |
-| 🇩🇪 Frankfurt     | `167.172.160.4`   | DigitalOcean |
-| 🇯🇵 Tokyo         | `45.77.28.252`   | Vultr          |
-| 🇫🇮 Finland       | `❌❌`   |         |❌❌
-| 🇸🇬 Singapore     | `139.180.135.67` | Vultr          |
-| 🇳🇱 Amsterdam     | `95.179.151.156`| Vultr          |
+| Região         | IP                | Provedor      |
+|----------------|-------------------|---------------|
+| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` | DigitalOcean  |
+| ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `167.172.160.4`   | DigitalOcean  |
+| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | Vultr         |
+| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` | Linode        |
+| ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | Vultr         |
+| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  | Vultr         |
 
 
 ## Status
