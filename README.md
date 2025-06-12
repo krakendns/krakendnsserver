@@ -257,5 +257,15 @@ Após instabilidade, o servidor Frankfurt (Alemanha) foi restabelecido com suces
 **10/06 (tarde)** - Suporte afirmou que não havia bloqueio de rede, mas os serviços continuavam **recusando requisições externas (status REFUSED)** mesmo com firewall correto.                        
 **10/06 (noite)** - Confirmado que **não era um erro do AdGuardHome ou do sistema**. Diagnóstico aponta infraestrutura da UpCloud como instável e com comportamento inconsistente de rede. 
 
-Devido a instabilidades graves nos VPS (não relacionadas à configuração local), suporte insuficiente e uma rede pública não confiável para DNS de produção, migrarmos para a DigitalOcean. Estamos buscando provedores na região entre Helsinki e Suécia para otimizar o serviço. Agradecemos a paciência e manteremos atualizações! 🦑 Mesmo com a fama de ser econômica e limitada, a Contabo enviou respostas consistentes e previsíveis, um destaque valioso.
+Devido a instabilidades graves nos VPS (não relacionadas à configuração local), suporte insuficiente e uma rede pública não confiável para DNS de produção, migrarmos para a DigitalOcean. Estamos buscando provedores na região entre Helsinki e Suécia para otimizar o serviço. Agradecemos a paciência e manteremos atualizações! 🦑 **Observação**: Apesar da fama de ser econômica e limitada, a **Contabo** enviou respostas consistentes e previsíveis, um destaque valioso.
+
+## 🆕 Atualização de Infraestrutura – 12/06/2025
+Olá, usuários do KrakenDNS! 🐙
+
+Informamos que um novo servidor está oficialmente online:
+
+🌍 KrakenDNS Suécia Linode
+IP: 172.234.100.170
+
+A migração para a Linode e DigitalOcean foi necessária devido às instabilidades na Upcloud e foi bem-sucedida. Ontem (11/06/2025) realizamos testes com nossas ferramentas, confirmando a estabilidade da Linode que tem se mostrado ótima com sua infraestrutura. Pedimos aos usuários que indiquem empresas confiáveis para fortalecer nosso DNS.
 
