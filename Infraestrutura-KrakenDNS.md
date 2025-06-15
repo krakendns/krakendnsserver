@@ -11,7 +11,7 @@
 Detectada degradação severa de performance no acesso aos repositórios Fedora/EPEL em múltiplos provedores de cloud globalmente. Downloads que normalmente levam segundos passaram a demorar 15+ minutos.
 
 
-**Provedores de Cloud**: DigitalOcean, Vultr, Linode, Contabo
+**Provedores de Cloud**: DigitalOcean, Vultr, Linode e Contabo
 
 
 **Regiões** América do Norte, Europa, Ásia e Oceania
