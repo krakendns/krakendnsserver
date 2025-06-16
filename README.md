@@ -110,6 +110,31 @@ pihole restartdns
 ![image](https://github.com/user-attachments/assets/c9a16890-8a3d-4893-a8ea-581a83931ccd)
 
 
+## Mikrotik:
+
+
+![mikrotik](https://github.com/user-attachments/assets/e2bcbda8-b74e-4eeb-94dc-94c5ef3ea3a3)
+
+![mikrotik 2](https://github.com/user-attachments/assets/346f943f-2920-41a7-bd1b-b090695010a0)
+
+![mikrotik3](https://github.com/user-attachments/assets/17f8a00b-4e77-454b-83ca-faf3f3a22993)
+
+![mikrotik 4](https://github.com/user-attachments/assets/b1a20944-8f7c-41f4-83c6-1c6031f0c956)
+
+![mikrotik 5](https://github.com/user-attachments/assets/43b09db2-5882-4fee-b6d2-6f6d9f79ef0e)
+
+![mikrotik 6](https://github.com/user-attachments/assets/c5be9c38-76e3-4811-be00-c7346e0e671b)
+
+![mikrotik 7](https://github.com/user-attachments/assets/128ea026-7e48-44c5-8af5-c4d826880ba7)
+
+
+## TP-Link Huawei:
+
+![huawei](https://github.com/user-attachments/assets/3d87517c-a261-46a9-8467-3176d77817bb)
+
+![tplink-1](https://github.com/user-attachments/assets/3aac3ba1-8a35-4113-8db8-0bef8cc8e010)
+
+
 
 ## Por que o KrakenDNS **não utiliza DoH como padrão**
 
