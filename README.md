@@ -261,7 +261,7 @@ Após instabilidade, o servidor Frankfurt (Alemanha) foi restabelecido com suces
 Devido a instabilidades graves nos VPS (não relacionadas à configuração local), suporte insuficiente e uma rede pública não confiável para DNS de produção, migrarmos para a DigitalOcean. Estamos buscando provedores na região entre Helsinki e Suécia para otimizar o serviço. Agradecemos a paciência e manteremos atualizações! 🦑 **Observação**: Apesar da fama de ser econômica e limitada, a **Contabo** enviou respostas consistentes e previsíveis, um destaque valioso.
 
 ## 🆕 Atualização de Infraestrutura – 12/06/2025
-Olá, usuários do KrakenDNS! 🐙
+Olá, usuários do KrakenDNS!
 
 Informamos que um novo servidor está oficialmente online:
 
@@ -269,4 +269,24 @@ Informamos que um novo servidor está oficialmente online:
 IP: 172.234.100.170
 
 A migração para a Linode e DigitalOcean foi necessária devido às instabilidades na Upcloud e foi bem-sucedida. Ontem (11/06/2025) realizamos testes com nossas ferramentas, confirmando a estabilidade da Linode que tem se mostrado ótima com sua infraestrutura. Pedimos aos usuários que indiquem empresas confiáveis para fortalecer nosso DNS.
+
+## 🆕 Atualização de Infraestrutura – 16/06/2025
+Olá, usuários do KrakenDNS!
+
+Informamos que um novo servidor está oficialmente online:
+
+🌍 KrakenDNS Finlândia tietokettu
+IP: 5.61.88.206
+A Evolução Continua!
+
+Temos o prazer de anunciar um marco importante na jornada do KrakenDNS. Nossa presença global está se expandindo com dois nós robustos na região nórdica! Essa mudança estratégica fortalece nossa infraestrutura, garantindo uma resolução de DNS mais rápida e confiável para usuários em toda a Europa.
+
+**O objetivo é simples:** Garantir que os usuários tenham acesso a um DNS público, rápido e resiliente, independentemente de barreiras políticas ou geográficas. Isso é só o começo! Estamos explorando ativamente novas parcerias e regiões para expandir ainda mais a rede.
+
+A Tietokettu é uma empresa fundada em 2019, focada em serviços de hospedagem como web hosting, VPS, servidores dedicados e até serviços de gaming. Eles operam a partir de um data center próprio em **Lempäälä**, **Finlândia**, o que nos garante mais controle sobre a infraestrutura. As Avaliações sólidas em plataformas como Trustpilot (4.5 estrelas) e HostAdvice (4.9 estrelas) reforçam a reputação da Tietokettu como uma escolha confiável para o KrakenDNS.
+
+![image](https://github.com/user-attachments/assets/41d022a4-daf0-45cc-941e-4e2abbd9b1c9)
+![image](https://github.com/user-attachments/assets/8897b5fa-50c5-470f-bba3-774fc23f5d40)
+
+
 
