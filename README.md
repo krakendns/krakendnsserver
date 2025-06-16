@@ -20,6 +20,7 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 | ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` | Linode        |
 | ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | Vultr         |
 | ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  | Vultr         |
+| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     | Tietokettu    |
 
 
 ## Status
