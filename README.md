@@ -285,8 +285,6 @@ Temos o prazer de anunciar um marco importante na jornada do KrakenDNS. Nossa pr
 
 A Tietokettu é uma empresa fundada em 2019, focada em serviços de hospedagem como web hosting, VPS, servidores dedicados e até serviços de gaming. Eles operam a partir de um data center próprio em **Lempäälä**, **Finlândia**, o que nos garante mais controle sobre a infraestrutura. As Avaliações sólidas em plataformas como Trustpilot (4.5 estrelas) e HostAdvice (4.9 estrelas) reforçam a reputação da Tietokettu como uma escolha confiável para o KrakenDNS.
 
-![image](https://github.com/user-attachments/assets/41d022a4-daf0-45cc-941e-4e2abbd9b1c9)
-![image](https://github.com/user-attachments/assets/8897b5fa-50c5-470f-bba3-774fc23f5d40)
 
 
 
