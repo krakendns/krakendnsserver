@@ -14,7 +14,7 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 
 | Região         | IP                | Provedor      |
 |----------------|-------------------|---------------|
-| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` | Vultr         |
+| ![US](https://flagcdn.com/24x18/us.png) New York   | `45.77.200.109` | Vultr         |
 | ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    | Vultr         |
 | ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | Vultr         |
 | ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` | Linode        |
