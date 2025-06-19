@@ -26,7 +26,7 @@ sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 sudo apt update
 sudo apt install certbot
 
-# CentOS/RHEL
+# RHEL
 sudo yum install certbot
 ```
 
