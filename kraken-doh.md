@@ -123,7 +123,7 @@ addDOHLocal("0.0.0.0:1053", "/etc/letsencrypt/live/seudominio.com/fullchain.pem"
 -- Upstream DNS servers (exemplo apenas)
 newServer("9.9.9.9")
 newServer("1.1.1.1")
-newServer("8.8.8.8")
+
 
 -- Policies básicas
 setServerPolicy(firstAvailable)
