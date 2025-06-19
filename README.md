@@ -316,6 +316,27 @@ Temos o prazer de anunciar um marco importante na jornada do KrakenDNS. Nossa pr
 
 A **Tietokettu** é uma empresa fundada em 2019, focada em serviços de hospedagem como web hosting, VPS, servidores dedicados e até serviços de gaming. Eles operam a partir de um data center próprio em **Lempäälä**, **Finlândia**. As Avaliações em plataformas como Trustpilot (4.5 estrelas) e HostAdvice (4.9 estrelas) reforçam a reputação da Tietokettu como uma escolha confiável para o KrakenDNS.
 
+## 🆕 Atualização 18/06/2025
+
+Antes de tudo, quero pedir desculpas pela demora em avançar com o projeto **KrakenDNS**. Manter um **DNS público** e aberto ao mundo é uma tarefa **extremamente desafiadora**, especialmente quando o objetivo é garantir **desempenho, segurança, privacidade e, acima de tudo, respeito aos usuários**.
+Além de lidar com a complexidade técnica, também preciso conciliar o **desenvolvimento com estudos e trabalho**, o que naturalmente torna o ritmo de evolução mais lento do que eu gostaria. Amanhã, 19 de junho de 2025, vamos fazer a estreia oficial do nosso serviço **DNS over HTTPS (DoH)**, utilizando uma arquitetura personalizada com **Caddy e dnsdist**.
+
+**🌐 Destaques da Nova Configuração KrakenDNS**
+
+**100% Personalizada**: Criamos uma solução sob medida, com Caddy como proxy reverso gerenciando os certificados SSL, e dnsdist lidando com as consultas DNS de forma rápida e segura.
+
+**Sem painel exposto**: Nosso painel AdGuard Home continua ativo internamente, mas totalmente protegida do acesso público.
+
+**DNS over HTTPS (DoH)**: Agora, usuários poderão utilizar KrakenDNS de forma segura, criptografada e com foco total em privacidade.
+
+Os códigos de configuração serão disponibilizados no GitHub, para que qualquer pessoa possa adaptar e contribuir. Por uma questão de **segurança, responsabilidade e respeito aos princípios que guiam o projeto KrakenDNS**, **não divulgaremos o passo a passo completo de implementação, nem detalhes sensíveis da infraestrutura utilizada**. O foco é garantir que o serviço permaneça **seguro, estável e protegido contra abusos**.
+As configurações disponibilizadas no GitHub serão exemplos **genéricos**, apenas para fins de aprendizado e estudo.
+
+O primeiro servidor a receber essa configuração será o **Eucalyptus, hospedado na Austrália**. Escolhemos esse nome em homenagem à **árvore nativa australiana**, um símbolo de **resiliência e adaptação**. Acreditamos que essas **qualidades são essenciais para um DNS público confiável.**
+
+**Por que migramos da DigitalOcean para a Vultr**
+
+Durante o desenvolvimento do **KrakenDNS**, aprendemos que gestão de acesso SSH e controle sobre chaves de autenticação são pontos críticos para a segurança de qualquer infraestrutura. Após algumas **dificuldades e limitações operacionais envolvendo a gestão de chaves SSH na DigitalOcean**, tomamos a decisão de migrar a nossa infraestrutura para a Vultr, que oferece um painel de gerenciamento de **SSH mais direto, flexível e seguro, permitindo uma administração mais eficiente da VPS**. Essa mudança foi feita de forma **planejada**, visando reduzir riscos futuros, evitar bloqueios administrativos em caso de reinstalações e garantir que sempre teremos controle sobre a VPS.
 
 
 
