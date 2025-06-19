@@ -232,7 +232,7 @@ O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudfla
 
 ─► **(Consulta DNS)**
 
-─► **[KrakenDNS IP: 144.202.57.221]**
+─► **[KrakenDNS IP: 45.77.200.109]**
 
 **[Camada de Segurança]**
 
