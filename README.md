@@ -48,33 +48,41 @@ Listas personalizadas de bloqueio
 
 **Método Rápido (uma linha)**:
 
-echo "nameserver 95.179.151.156" | sudo tee /etc/resolv.conf
+```bash
+echo "nameserver 45.77.200.109" | sudo tee /etc/resolv.conf
+```
+
 
 **Método Permanente (systemd-resolved)**:
 
+
 **Configurar DNS principal**:
 
+```bash
 sudo systemctl stop systemd-resolved
 echo "DNS=95.179.151.156 162.243.238.171" | sudo tee -a /etc/systemd/network/dns.conf
 sudo systemctl start systemd-resolved
+```
 
 **Verificar configuração**
-
+```bash
 resolvectl status
-
+```
 **Testar resolução**
-
+```bash
 dig @95.179.151.156 google.com
-
+```
 **Testar latência**
-
+```bash
 ping -c 4 95.179.151.156
-
+```
 **Backup da configuração atual**
-
+```bash
 sudo cp /etc/resolv.conf /etc/resolv.conf.backup
-
+```
 **Configurar KrakenDNS**
+
+```bash
 sudo tee /etc/resolv.conf << EOF
 KrakenDNS Configuration
 nameserver 95.179.151.156
@@ -83,18 +91,25 @@ nameserver 45.77.28.252
 options timeout:2
 options attempts:3
 EOF
+```
+
 
 **Tornar imutável**
+```bash
 sudo chattr +i /etc/resolv.conf
-
+```
 **sistemas Red Hat**
 
+```bash
 systemctl stop NetworkManager
 echo -e "DNS1=95.179.151.156\nDNS2=162.243.238.171" >> /etc/sysconfig/network-scripts/ifcfg-eth0
 systemctl start NetworkManager
+```
+
 
 ## Forma recomendada para Pi-hole (modo padrão, porta 53)
 
+```bash
 sudo nano /etc/dnsmasq.d/99-kraken.conf
 
 server=95.179.151.156#53
@@ -104,16 +119,22 @@ server=45.77.28.252#53
 server=139.180.135.67#53
 
 pihole restartdns
+```
 
-## Como usar no Windows:
+
+## Como utilizar no Windows com o IP:
 
 ![image](https://github.com/user-attachments/assets/c9a16890-8a3d-4893-a8ea-581a83931ccd)
+
+## Como utilizar no Windows DOH:
+
+![image](https://github.com/user-attachments/assets/cac5e622-9d9c-4b67-9096-47d687a61b26)
 
 
 ## Mikrotik IP:
 
 
-![mikrotik](https://github.com/user-attachments/assets/e2bcbda8-b74e-4eeb-94dc-94c5ef3ea3a3)
+![image](https://github.com/user-attachments/assets/95b327a1-1b35-4188-b3e7-733fee1b92e0)
 
 ![mikrotik 2](https://github.com/user-attachments/assets/346f943f-2920-41a7-bd1b-b090695010a0)
 
@@ -131,17 +152,52 @@ pihole restartdns
 
 **New Terminal**
 
-
-
+```bash
 /tool fetch url=https://curl.se/ca/cacert.pem
 
 /certificate import file-name=cacert.pem
 
+System -> Certificates (Confirme se os certificados foram importados.)
+```
+
+```bash
+IP -> DNS
+
+46.250.240.138
+
+https://doh-eucalyptus.krakendnsserver.net/dns-query
+
+```
+
+![image](https://github.com/user-attachments/assets/8bfbf35c-101a-4af9-a2ea-57e88a10a028)
+
+## Firefox
+
+![image](https://github.com/user-attachments/assets/c1cdbc85-a137-4674-8316-527610f9947a)
+
+## Brave
+
+![image](https://github.com/user-attachments/assets/2c175868-c731-41cc-8492-842178768ff6)
+
+![image](https://github.com/user-attachments/assets/bcd8ee7d-ac25-4ff4-b92f-9dde5d621395)
+
+![image](https://github.com/user-attachments/assets/17126c79-4c9f-4765-8abc-679a1def5fbf)
+
+![image](https://github.com/user-attachments/assets/aaf35f81-3be6-405d-90bb-ebacdbec929b)
 
 
+## Recomendamos o mullvad browser
 
 
+```bash
+https://mullvad.net/pt/download/vpn/windows
 
+https://mullvad.net/en/download/browser/linux
+
+https://mullvad.net/en/download/browser/macos
+```
+
+![image](https://github.com/user-attachments/assets/e2dd293b-7315-4d7e-ba37-0191133af81c)
 
 
 ## TP-Link Huawei:
@@ -151,20 +207,13 @@ pihole restartdns
 ![tplink-1](https://github.com/user-attachments/assets/3aac3ba1-8a35-4113-8db8-0bef8cc8e010)
 
 
+## Testar o DNS
 
-## Por que o KrakenDNS **não utiliza DoH como padrão**
+```bash
+https://dnsleaktest.com/
 
-O protocolo **DNS-over-HTTPS (DoH)** é uma tecnologia importante para proteger a privacidade dos usuários contra interceptações, especialmente em redes públicas. Contudo, o KrakenDNS **optou tecnicamente por não utilizar DoH como padrão** neste momento por motivos **técnicos e de segurança**:
-
--**Ataques TLS**: Certificados podem ser comprometidos
-
--**Incompatibilidade**: Cloudflare Proxy quebra Android e IOS
-
--**Exposição de serviços**: Painéis administrativos ficam acessíveis
-
-
-![image](https://github.com/user-attachments/assets/f0291917-71a8-47bf-9f9c-65314c33f15c)
-
+https://browserleaks.com/dns
+```
 
 ## Nossa solução
 
@@ -177,7 +226,7 @@ O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudfla
 -**Upstreams criptografados** 
 
 
-### 🔁 Fluxo de uma consulta no KrakenDNS
+## 🔁 Fluxo de uma consulta no KrakenDNS IP
 
 **[Usuário]** ─►
 
@@ -194,11 +243,6 @@ O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudfla
 Mesmo sem DoH no lado do usuário, a privacidade é garantida dentro do Kraken com criptografia interna, upstreams seguros e filtragem baseada em reputação.
 
 
-## 🔁 Fluxo de uma consulta no KrakenDNS HOH
-
-
-
-
 🚀 [Cloudflare](https://www.cloudflare.com/pt-br/) — Por oferecer uma das infraestruturas mais rápidas e resilientes do mundo.  
 🛡️ [Quad9](https://quad9.net/pt/) — Por proteger os usuários contra ameaças reais, sem comprometer a privacidade.  
 ⚙️ [ControlD](https://controld.com/) — Pelos filtros personalizáveis avançados e compromisso com escolhas livres de rastreamento.  
@@ -207,7 +251,14 @@ Mesmo sem DoH no lado do usuário, a privacidade é garantida dentro do Kraken c
 👨‍👩‍👧‍👦 [CleanBrowsing](https://cleanbrowsing.org/) — Por oferecer proteção familiar de qualidade.
 
 
+## 🔁 Fluxo de uma consulta no KrakenDNS HOH
 
+![Fluxo DOH KrakenDNS](https://github.com/user-attachments/assets/db194e34-9c2d-47f3-ae8a-2559dab64a27)
+
+    Usuário (Browser, Mikrotik, Desktop) --> HTTPS DoH https://doh-eucalyptus.krakendnsserver.net/dns-query| 
+    --> (Caddy) -->Redireciona --> (dnsdist) --> Encaminha para o AdguardHome
+     --> Resposta HTTPS
+    
 
 
 ## É fundamental garantir a transparência com os usuários e evitar qualquer promessa enganosa.
