@@ -1,7 +1,7 @@
 # Lista pública dos servidores KrakenDNS
 
 95.179.151.156   # Amsterdam 
-162.243.238.171  # Nova York 
+45.77.200.109    # Nova York 
 45.77.28.252     # Tokyo 
 199.247.21.0     # Frankfurt
 139.180.135.67   # Singapura
