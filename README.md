@@ -110,7 +110,7 @@ pihole restartdns
 ![image](https://github.com/user-attachments/assets/c9a16890-8a3d-4893-a8ea-581a83931ccd)
 
 
-## Mikrotik:
+## Mikrotik IP:
 
 
 ![mikrotik](https://github.com/user-attachments/assets/e2bcbda8-b74e-4eeb-94dc-94c5ef3ea3a3)
@@ -126,6 +126,22 @@ pihole restartdns
 ![mikrotik 6](https://github.com/user-attachments/assets/c5be9c38-76e3-4811-be00-c7346e0e671b)
 
 ![mikrotik 7](https://github.com/user-attachments/assets/128ea026-7e48-44c5-8af5-c4d826880ba7)
+
+## Mikrotik DOH:
+
+**New Terminal**
+
+
+
+/tool fetch url=https://curl.se/ca/cacert.pem
+
+/certificate import file-name=cacert.pem
+
+
+
+
+
+
 
 
 ## TP-Link Huawei:
@@ -178,14 +194,9 @@ O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudfla
 Mesmo sem DoH no lado do usuário, a privacidade é garantida dentro do Kraken com criptografia interna, upstreams seguros e filtragem baseada em reputação.
 
 
-## Futuro do DoH no Kraken
+## 🔁 Fluxo de uma consulta no KrakenDNS HOH
 
-O suporte ao DoH **está em desenvolvimento experimental**, mas será **ativado apenas quando a estabilidade, performance e privacidade puderem ser mantidas em alto nível**, sem comprometer a experiência dos usuários.
 
-Utilizamos uma **infraestrutura** com múltiplos provedores de upstream, cuidadosamente escolhidos por seus **princípios éticos**, **desempenho** e **respeito à privacidade**.
-
-**Por que escolher um DNS quando você pode ter o melhor de todos?**
-O KrakenDNS é possível graças à excelência de outras iniciativas que inspiram confiança, segurança e inovação no universo do DNS. O KrakenDNS reconhece e agradece publicamente as iniciativas que tornam a internet mais rápida, segura e ética. São projetos que inspiram nossa missão e ajudam a elevar a qualidade da resolução DNS para todos:
 
 
 🚀 [Cloudflare](https://www.cloudflare.com/pt-br/) — Por oferecer uma das infraestruturas mais rápidas e resilientes do mundo.  
