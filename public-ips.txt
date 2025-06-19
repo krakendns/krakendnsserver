@@ -7,4 +7,4 @@
 139.180.135.67   # Singapura
 172.234.100.170  # Sweden	
 5.61.88.206      # Finland
-46.250.240.138   # Austrália
+46.250.240.138   # Australia
