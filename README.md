@@ -215,7 +215,7 @@ https://dnsleaktest.com/
 https://browserleaks.com/dns
 ```
 
-## Nossa solução
+## Criptografia interna
 
 O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudflare poxy internamente para criptografia entre servidores, oferecendo segurança sem as vulnerabilidades web.
 
