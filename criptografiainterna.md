@@ -85,8 +85,8 @@ proxy-dns-address: 127.0.0.1 # Configuração apenas em localhost (segurança)
 
 # Servidores upstream Cloudflare via DoH
 upstream:
-  - https://1.1.1.1/dns-query # Cloudflare Primary (Anycast)
-  - https://1.0.0.1/dns-query # Cloudflare Secondary (Redundância)
+  - https://1.1.1.1/dns-query # Defina os servidores DoH para os quais as consultas DNS serão encaminhadas via HTTPS
+  - https://1.0.0.1/dns-query # Defina os servidores DoH para os quais as consultas DNS serão encaminhadas via HTTPS
 
 ```
 
@@ -204,6 +204,9 @@ Este documento compara as duas principais abordagens de criptografia DNS utiliza
 |                         |                     |                      |
 
 
+**Observação**: Nenhum dos protocolos oferece proteção completa contra ataques quânticos. Ambos usam curvas modernas (Curve25519 / ECDHE), que oferecem resistência parcial.
+
+
 **Performance e Latência**
 
 | Método            | Latência | Overhead |
@@ -253,9 +256,7 @@ Não existe "melhor" opção. A escolha depende dos seus requisitos específicos
 
 Para máxima robustez, implemente ambos com fallback automático, proporcionando o melhor dos dois mundos.
 
-
-
-
+**Observação**: Os números são ilustrativos, baseados em benchmarks médios de laboratório. O desempenho real pode variar dependendo da rede e da geolocalização.
 
 
 
