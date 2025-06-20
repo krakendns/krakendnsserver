@@ -60,7 +60,7 @@ echo "nameserver 45.77.200.109" | sudo tee /etc/resolv.conf
 
 ```bash
 sudo systemctl stop systemd-resolved
-echo "DNS=95.179.151.156 162.243.238.171" | sudo tee -a /etc/systemd/network/dns.conf
+echo "DNS=95.179.151.156 199.247.21.0" | sudo tee -a /etc/systemd/network/dns.conf
 sudo systemctl start systemd-resolved
 ```
 
@@ -86,7 +86,7 @@ sudo cp /etc/resolv.conf /etc/resolv.conf.backup
 sudo tee /etc/resolv.conf << EOF
 KrakenDNS Configuration
 nameserver 95.179.151.156
-nameserver 162.243.238.171
+nameserver 199.247.21.0
 nameserver 45.77.28.252
 options timeout:2
 options attempts:3
