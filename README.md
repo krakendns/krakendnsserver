@@ -41,8 +41,7 @@ Kraken DNS é um serviço de DNS público gratuito projetado para desempenho exc
 
 Bloqueio de malware automático
 Filtros anti-phishing atualizados
-Proteção contra tracking opcional
-Listas personalizadas de bloqueio
+
 
 ## Como usar no Linux:
 
