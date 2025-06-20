@@ -12,17 +12,18 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 
 ## 🌐 Endereços Globais – KrakenDNS
 
-| Região         | IP                | Provedor      |
-|----------------|-------------------|---------------|
-| ![US](https://flagcdn.com/24x18/us.png) New York   | `45.77.200.109` | Vultr         |
-| ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    | Vultr         |
-| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | Vultr         |
-| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` | Linode        |
-| ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | Vultr         |
-| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  | Vultr         |
-| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     | Tietokettu    |
-| ![AU](https://flagcdn.com/24x18/au.png) Australia  | `46.250.240.138`  | Contabo       |
+## 🌐 Endereços Globais – KrakenDNS
 
+| Região         | IP                | DOH                                         | Provedor      |
+|----------------|-------------------|---------------------------------------------|---------------|
+| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` |                                             | Vultr         |
+| ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    |                                             | Vultr         |
+| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    |                                             | Vultr         |
+| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` |                                             | Linode        |
+| ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | doh-merlion.krakendnsserver.net             | Vultr         |
+| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  |                                             | Vultr         |
+| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     |                                             | Tietokettu    |
+| ![AU](https://flagcdn.com/24x18/au.png) Australia  | `46.250.240.138`  | doh-eucalyptus.krakendnsserver.net          | Contabo       |
 ## Status
 
 [![](https://img.shields.io/badge/KrakenDNS-Status%3A%20Online-brightgreen)](https://stats.uptimerobot.com/eAyelEtTEt)
@@ -399,11 +400,18 @@ O primeiro servidor a receber essa configuração será o **Eucalyptus, hospedad
 
 Durante o desenvolvimento do **KrakenDNS**, aprendemos que gestão de acesso SSH e controle sobre chaves de autenticação são pontos críticos para a segurança de qualquer infraestrutura. Após algumas **dificuldades e limitações operacionais envolvendo a gestão de chaves SSH na DigitalOcean**, tomamos a decisão de migrar a nossa infraestrutura para a Vultr, que oferece um painel de gerenciamento de **SSH mais direto, flexível e seguro, permitindo uma administração mais eficiente da VPS**. Essa mudança foi feita de forma **planejada**, visando reduzir riscos futuros, evitar bloqueios administrativos em caso de reinstalações e garantir que sempre teremos controle sobre a VPS.
 
-## 🆕Atualização Importante – Estreia Oficial do KrakenDNS Eucalyptus DOH 19/06/2025
+## 🆕Atualização Importante – Estreia Oficial do KrakenDNS Doh-Eucalyptus 19/06/2025
 
 Hoje é um dia muito especial estamos fazendo a estreia oficial do **Eucalyptus**, nossa nova camada de resolução **DNS over HTTPS (DoH)** O serviço já está funcionando com sucesso no Mikrotik e em browsers como Firefox e Chrome (em desktops). O suporte ao Android ainda está em fase de desenvolvimento, mas já estamos trabalhando nisso com muito carinho. Agradecemos a paciência de todos!
 Hoje também estamos liberando os **códigos de exemplo**, mostrando detalhes da nossa configuração com **Caddy e dnsdist** (sempre respeitando as boas práticas de segurança da nossa infraestrutura). Sinta-se à vontade para testar, sugerir melhorias ou até adaptar o setup para outras plataformas.
 
 ![image](https://github.com/user-attachments/assets/13c9a956-f691-4ba0-9921-20666721b7d1)
+
+## 🆕Atualização – Novo Servidor DoH em Singapura DoH-Merlion 20/06/2025
+
+**História do Merlion**
+
+O Merlion é um símbolo turístico de Singapura. A lenda diz que o príncipe Sang Nila Utama avistou um leão ao chegar à ilha no século XIV, dando origem ao nome "Singapura" (cidade do leão). O corpo de peixe homenageia as origens da ilha como uma vila de pescadores chamada Temasek. Criado em 1964 por Alec Fraser-Brunner como logotipo da Singapore Tourism Board, o Merlion ganhou vida em forma de estátua em 1972, esculpido por Lim Nang Seng. Localizado inicialmente na foz do rio Singapura, foi realocado em 2002 para o Merlion Park, onde continua a atrair visitantes com sua vista para a Marina Bay.
+
 
 
