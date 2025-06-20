@@ -1,6 +1,6 @@
 ## Como funciona o DNSCrypt dentro do KrakenDNS? Antes de tudo:
 
-Esta documentação tem **fins educativos**. Não representa a **configuração real dos nossos servidores**.
+Esta documentação tem **fins educativos**. Não representa a **configuração real dos nossos servidores**. Exemplo educativo de configuração (não use em produção sem ajustes)
 Para configurações detalhadas e seguras, consulte sempre a documentação oficial do projeto DNSCrypt-Proxy:
 
 ```bash
@@ -107,7 +107,7 @@ Cliente → cloudflared (127.0.0.1:53) → DoH HTTPS → Cloudflare (1.1.1.1)
 **Benefícios da Configuração:**
 
 - **Criptografia:** Todas as consultas vão via HTTPS
-- **Performance:** Cache local + Anycast Cloudflare  
+- **Performance:** Roteamento Anycast + Resposta rápida  
 - **Redundância:** Dois servidores upstream
 - **Compatibilidade:** Apps legados podem usar porta 53 local
 
