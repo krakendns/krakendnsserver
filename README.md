@@ -413,5 +413,5 @@ Hoje também estamos liberando os **códigos de exemplo**, mostrando detalhes da
 
 O Merlion é um símbolo turístico de Singapura. A lenda diz que o príncipe Sang Nila Utama avistou um leão ao chegar à ilha no século XIV, dando origem ao nome "Singapura" (cidade do leão). O corpo de peixe homenageia as origens da ilha como uma vila de pescadores chamada Temasek. Criado em 1964 por Alec Fraser-Brunner como logotipo da Singapore Tourism Board, o Merlion ganhou vida em forma de estátua em 1972, esculpido por Lim Nang Seng. Localizado inicialmente na foz do rio Singapura, foi realocado em 2002 para o Merlion Park, onde continua a atrair visitantes com sua vista para a Marina Bay.
 
-
+Queremos que o Kraken continue crescendo de forma segura e resiliente! 🦑🌍
 
