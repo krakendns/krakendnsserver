@@ -218,6 +218,7 @@ Este documento compara as duas principais abordagens de criptografia DNS utiliza
 | DNSCrypt          | 25       | +67%     |
 | Cloudflared DoH    | 22       | +47%     |
 
+**Observação**: Os números são ilustrativos, baseados em benchmarks médios de laboratório. O desempenho real pode variar dependendo da rede e da geolocalização.
 
 
 
@@ -256,7 +257,6 @@ Não existe "melhor" opção. A escolha depende dos seus requisitos específicos
 
 Para máxima robustez, implemente ambos com fallback automático, proporcionando o melhor dos dois mundos.
 
-**Observação**: Os números são ilustrativos, baseados em benchmarks médios de laboratório. O desempenho real pode variar dependendo da rede e da geolocalização.
 
 
 
