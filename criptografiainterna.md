@@ -206,14 +206,17 @@ Este documento compara as duas principais abordagens de criptografia DNS utiliza
 
 **Performance e Latência**
 
-Benchmark Médio (ms):
-┌─────────────────┬──────────┬───────────┐
-│ Método          │ Latência │ Overhead  │
-├─────────────────┼──────────┼───────────┤
-│ DNS Tradicional │    15    │     0%    │
-│ DNSCrypt        │    25    │   +67%    │
-│ Cloudflared DoH │    22    │   +47%    │
-└─────────────────┴──────────┴───────────┘
+| Método            | Latência | Overhead |
+|-------------------|----------|----------|
+| **Performance e Latência** |          |          
+| Benchmark Médio (ms):      |          |          
+| ----------------- | -------- | -------- |
+| DNS Tradicional   | 15       | 0%       |
+| DNSCrypt          | 25       | +67%     |
+| Cloudflared DoH    | 22       | +47%     |
+
+
+
 
 ## Casos de Uso Recomendados
 
