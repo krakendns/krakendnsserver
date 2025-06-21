@@ -479,3 +479,5 @@ https://browserleaks.com/dns
 ```bash
 https://dnsleaktest.com/
 ```
+![image](https://github.com/user-attachments/assets/7881febd-82b3-46cc-9e5b-6950ba4a3301)
+
