@@ -18,7 +18,7 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 |----------------|-------------------|---------------------------------------------|---------------|
 | ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` |                                             | Vultr         |
 | ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    |                                             | Vultr         |
-| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    |                                             | Vultr         |
+| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | doh-fujisan.krakendnsserver.net             | Vultr         |
 | ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` |                                             | Linode        |
 | ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | doh-merlion.krakendnsserver.net             | Vultr         |
 | ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  |                                             | Vultr         |
@@ -405,6 +405,23 @@ Durante o desenvolvimento do **KrakenDNS**, aprendemos que gestão de acesso SSH
 Hoje é um dia muito especial estamos fazendo a estreia oficial do **Eucalyptus**, nossa nova camada de resolução **DNS over HTTPS (DoH)** O serviço já está funcionando com sucesso no Mikrotik e em browsers como Firefox e Chrome (em desktops). O suporte ao Android ainda está em fase de desenvolvimento, mas já estamos trabalhando nisso com muito carinho. Agradecemos a paciência de todos!
 Hoje também estamos liberando os **códigos de exemplo**, mostrando detalhes da nossa configuração com **Caddy e dnsdist** (sempre respeitando as boas práticas de segurança da nossa infraestrutura). Sinta-se à vontade para testar, sugerir melhorias ou até adaptar o setup para outras plataformas.
 
+```bash
+doh-eucalyptus.krakendnsserver.net
+```
+```bash
+https://doh-eucalyptus.krakendnsserver.net/dns-query
+```
+
+**Faça o teste do DNS:**
+
+```bash
+https://browserleaks.com/dns
+```
+
+```bash
+https://dnsleaktest.com/
+```
+
 ![image](https://github.com/user-attachments/assets/13c9a956-f691-4ba0-9921-20666721b7d1)
 
 ## 🆕Atualização – Novo Servidor DoH em Singapura DoH-Merlion 20/06/2025
@@ -415,12 +432,50 @@ O Merlion é um símbolo turístico de Singapura. A lenda diz que o príncipe Sa
 
 Queremos que o Kraken continue crescendo de forma segura e resiliente! 🦑🌍
 
-Faça o teste do DNS:
+
+```bash
+doh-merlion.krakendnsserver.net
+```
+
+```bash
+https://doh-merlion.krakendnsserver.net/dns-query
+```
+
+
+**Faça o teste do DNS:**
 
 ```bash
 https://browserleaks.com/dns
+```
 
+```bash
 https://dnsleaktest.com/
 ```
 
 ![image](https://github.com/user-attachments/assets/41c6e294-bb2e-426c-8a64-51a6740cc3f4)
+
+## 🆕Atualização – Novo Servidor DoH em Japão DoH-Fujisan 21/06/2025
+
+**História do Fujisan🌋**
+
+O Monte Fujisan é a montanha mais alta do Japão, com 3.776 metros. Sua simetria perfeita e cones vulcânicos refletem força e harmonia, sendo Patrimônio Mundial da UNESCO desde 2013. Localizado a cerca de 100 km de Tóquio, é um marco natural que inspira inovação e conexão. O servidor localizado na região de Tóquio com baixa latência para usuários do Japão e Ásia
+
+
+```bash
+doh-fujisan.krakendnsserver.net
+```
+
+```bash
+https://doh-fujisan.krakendnsserver.net/dns-query
+```
+
+
+**Faça o teste do DNS:**
+
+```bash
+https://browserleaks.com/dns
+```
+
+```bash
+https://dnsleaktest.com/
+```
