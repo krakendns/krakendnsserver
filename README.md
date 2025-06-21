@@ -415,3 +415,12 @@ O Merlion é um símbolo turístico de Singapura. A lenda diz que o príncipe Sa
 
 Queremos que o Kraken continue crescendo de forma segura e resiliente! 🦑🌍
 
+Faça o teste do DNS:
+
+```bash
+https://browserleaks.com/dns
+
+https://dnsleaktest.com/
+```
+
+![image](https://github.com/user-attachments/assets/41c6e294-bb2e-426c-8a64-51a6740cc3f4)
