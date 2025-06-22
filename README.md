@@ -480,4 +480,31 @@ https://dnsleaktest.com/
 ```
 ![image](https://github.com/user-attachments/assets/7881febd-82b3-46cc-9e5b-6950ba4a3301)
 
-## 🆕Atualização – Novo Servidor DoH
+
+## 🆕Atualização – Novo Servidor DoH Frankfurt - Doh-Skyline 21/06/2025
+
+**História do Skyline**
+
+Frankfurt é o coração digital da Europa, abrigando o DE-CIX o maior ponto de troca de internet do continente. Localizado estrategicamente no centro da Europa, oferece conectividade premium e baixa latência para usuários em toda a região. Assim como o skyline moderno de Frankfurt simboliza inovação e conectividade, o DoH-Skyline representa mais um passo na evolução do KrakenDNS como um hub global.
+
+
+```bash
+doh-skyline.krakendnsserver.net
+```
+
+```bash
+https://doh-skyline.krakendnsserver.net/dns-query
+```
+
+**Faça o teste do DNS:**
+
+```bash
+https://browserleaks.com/dns
+```
+
+```bash
+https://dnsleaktest.com/
+```
+![image](https://github.com/user-attachments/assets/a43361a5-131d-447d-90c4-a2edc5fac095)
+
+
