@@ -9,6 +9,10 @@
 doh-merlion.krakendnsserver.net
 ```
 
+```bash
+https://doh-merlion.krakendnsserver.net/dns-query
+```
+
 ![AU](https://flagcdn.com/24x18/au.png) Australia
 
 ```bash
@@ -18,6 +22,11 @@ doh-merlion.krakendnsserver.net
 ```bash
 doh-eucalyptus.krakendnsserver.net         
 ```
+
+```bash
+https://doh-eucalyptus.krakendnsserver.net/dns-query
+```
+
 ![DE](https://flagcdn.com/24x18/de.png) Frankfurt 
 
 ```bash
@@ -28,4 +37,21 @@ doh-eucalyptus.krakendnsserver.net
 doh-skyline.krakendnsserver.net             
 ```
 
+```bash
+https://doh-skyline.krakendnsserver.net/dns-query
+```
+
+![JP](https://flagcdn.com/24x18/jp.png) Tokyo      
+
+```bash
+45.77.28.252
+```
+
+```bash
+doh-fujisan.krakendnsserver.net
+```
+
+```bash
+https://doh-fujisan.krakendnsserver.net/dns-query
+```
 
