@@ -454,7 +454,7 @@ https://dnsleaktest.com/
 
 ![image](https://github.com/user-attachments/assets/41c6e294-bb2e-426c-8a64-51a6740cc3f4)
 
-## 🆕Atualização – Novo Servidor DoH em Japão DoH-Fujisan 21/06/2025
+## 🆕Atualização – Novo Servidor DoH no Japão DoH-Fujisan 21/06/2025
 
 **História do Fujisan🌋**
 
@@ -480,3 +480,4 @@ https://dnsleaktest.com/
 ```
 ![image](https://github.com/user-attachments/assets/7881febd-82b3-46cc-9e5b-6950ba4a3301)
 
+## 🆕Atualização – Novo Servidor DoH
