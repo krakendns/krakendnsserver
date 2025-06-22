@@ -458,8 +458,7 @@ https://dnsleaktest.com/
 
 **História do Fujisan🌋**
 
-O Monte Fujisan é a montanha mais alta do Japão, com 3.776 metros. Sua simetria perfeita e cones vulcânicos refletem força e harmonia, sendo Patrimônio Mundial da UNESCO desde 2013. Localizado a cerca de 100 km de Tóquio, é um marco natural que inspira inovação e conexão. O servidor localizado na região de Tóquio com baixa latência para usuários do Japão e Ásia
-
+O Monte Fujisan é a montanha mais alta do Japão, com 3.776 metros. Sua simetria perfeita e cones vulcânicos refletem força e harmonia, sendo Patrimônio Mundial da UNESCO desde 2013. Localizado a cerca de 100 km de Tóquio, é um marco natural que inspira inovação e conexão. O servidor está localizado na região de Tóquio, com baixa latência para usuários do Japão e Ásia.
 
 ```bash
 doh-fujisan.krakendnsserver.net
