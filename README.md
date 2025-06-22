@@ -16,14 +16,14 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 
 | Região         | IP                | DOH                                         | Provedor      |
 |----------------|-------------------|---------------------------------------------|---------------|
-| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` |                                             | Vultr         |
-| ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    |                                             | Vultr         |
-| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | doh-fujisan.krakendnsserver.net             | Vultr         |
-| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` |                                             | Linode        |
-| ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | doh-merlion.krakendnsserver.net             | Vultr         |
-| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  |                                             | Vultr         |
-| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     |                                             | Tietokettu    |
-| ![AU](https://flagcdn.com/24x18/au.png) Australia  | `46.250.240.138`  | doh-eucalyptus.krakendnsserver.net          | Contabo       |
+| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` |                                             | Vultr      |
+| ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    | doh-skyline.krakendnsserver.net             | Vultr      |
+| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | doh-fujisan.krakendnsserver.net             | Vultr      |
+| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` |                                             | Linode     |
+| ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | doh-merlion.krakendnsserver.net             | Vultr      |
+| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  |                                             | Vultr      |
+| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     |                                             | Tietokettu |
+| ![AU](https://flagcdn.com/24x18/au.png) Australia  | `46.250.240.138`  | doh-eucalyptus.krakendnsserver.net          | Contabo    |
 ## Status
 
 [![](https://img.shields.io/badge/KrakenDNS-Status%3A%20Online-brightgreen)](https://stats.uptimerobot.com/eAyelEtTEt)
