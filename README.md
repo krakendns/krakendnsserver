@@ -566,7 +566,37 @@ https://dnsleaktest.com/
 ```
 
 
+## KrakenDNS e Mikrotik: Resultados de um Teste de "Simulação DPI" 23/06/2025
+
+![image](https://github.com/user-attachments/assets/c68d58df-d576-46b5-8970-0dfaf6e53d26)
+
+![image](https://github.com/user-attachments/assets/16b7e6fe-e74c-4e65-b4af-a73899e74a5e)
 
 
+Em NAT DNSNAT redirecionamos o Mikrotik apenas para o DNS que escolhemos. Durante testes em cenários com firewalls de operadoras, ISPs com DPI ou redes que inspecionam tráfego HTTPS:
 
+
+| Situação                                                            | Resultado                                                                 |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| 📡 DNS over HTTPS (DoH) passando por Mikrotik com DPI básico        | ❌ Muitas vezes bloqueado ou quebrado                                      |
+| 🚪 DNS Proxy na porta 53 usando DNSCrypt ou Cloudflare como backend | ✅ Maior taxa de sucesso mesmo em redes restritivas                        |
+| 🔀 RethinkDNS com modo "DNS Proxy IP:53"                            | ✅ Funcionou muito melhor, especialmente com o Cloudflare Proxy no backend |
+
+
+**Motivo técnico provável:**
+
+| Motivo                                      | Detalhe                                                                                                |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| ❌ DPI bloqueando padrões HTTPS DoH          | Algumas operadoras bloqueiam ou inspecionam qualquer tráfego HTTPS com path suspeito como `/dns-query` |
+| ✅ Porta 53 passando direto                  | O tráfego DNS tradicional (UDP/TCP 53) geralmente é menos inspecionado                                 |
+| ✅ Cloudflare Anycast + DNSCrypt + Proxy TCP | Cloudflare e DNSCrypt é confundindo como DNS comum, confundindo filtros DPI                                  |
+
+
+**Recomendações KrakenDNS baseadas nesses testes:**
+
+| Cenário                                               | Recomendação                                                   |
+| ----------------------------------------------------- | -------------------------------------------------------------- |
+| Usuários em redes com DPI leve (escolas, ISPs locais) | Preferir usar **RethinkDNS em modo porta 53 + DNSCrypt**       |
+| Usuários em redes com bloqueio HTTPS específico       | Evitar DoH puro                                                |
+| Usuários com Android sem root                         | Usar o **Rethink DoH com IP dedicado Kraken**                  |
 
