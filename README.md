@@ -12,7 +12,6 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 
 ## 🌐 Endereços Globais – KrakenDNS
 
-## 🌐 Endereços Globais – KrakenDNS
 
 | Região         | IP                | DOH                                         | Provedor      |
 |----------------|-------------------|---------------------------------------------|---------------|
