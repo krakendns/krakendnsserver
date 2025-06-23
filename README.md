@@ -632,7 +632,7 @@ https://dnsleaktest.com/
 
 **A História de Valhalla**
 
-Nos tempos antigos, nas terras frias da Escandinávia, os vikings acreditavam que os guerreiros mais corajosos, aqueles que morriam em batalha com honra, eram escolhidos por Odin, o pai de todos os deuses, para viver em Valhalla. Esse salão magnífico, situado em Asgard, o reino dos deuses, era descrito como um lugar de glória eterna, com tetos de escudos dourados e colunas feitas de lanças. Diziam que as portas eram tão vastas que permitiam a entrada de exércitos inteiros, e o chão era coberto com armaduras reluzentes dos heróis caídos. 
+Nos tempos antigos, nas terras frias da Escandinávia, os vikings acreditavam que os guerreiros mais corajosos, aqueles que morriam em batalha com honra, eram escolhidos por Odin, o pai de todos os deuses, para viver em Valhalla. Esse salão magnífico, situado em Asgard, o reino dos deuses, era descrito como um lugar de glória eterna, com tetos de escudos dourados e colunas feitas de lanças. Diziam que as portas eram tão vastas que permitiam a entrada de exércitos inteiros, e o chão era coberto com armaduras reluzentes dos heróis caídos. Que as consultas DNS que passarem por Valhalla sejam rápidas como o voo de um corvo de Odin, e que cada usuário encontre o destino digital que busca, com segurança.
 
 
 ```bash
