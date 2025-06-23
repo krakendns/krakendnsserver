@@ -21,7 +21,7 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 | ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | doh-fujisan.krakendnsserver.net             | Vultr      |
 | ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` |                                             | Linode     |
 | ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | doh-merlion.krakendnsserver.net             | Vultr      |
-| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  |                                             | Vultr      |
+| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  | doh-windmill.krakendnsserver.net            | Vultr      |
 | ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     |                                             | Tietokettu |
 | ![AU](https://flagcdn.com/24x18/au.png) Australia  | `46.250.240.138`  | doh-eucalyptus.krakendnsserver.net          | Contabo    |
 ## Status
@@ -600,3 +600,31 @@ Em NAT DNSNAT redirecionamos o Mikrotik apenas para o DNS que escolhemos. Durant
 | Usuários em redes com bloqueio HTTPS específico       | Evitar DoH puro                                                |
 | Usuários com Android sem root                         | Usar o **Rethink DoH com IP dedicado Kraken**                  |
 
+
+
+## 🆕Atualização – Novo Servidor DoH Amsterdã - Doh-windmill 23/06/2025
+
+**A Origem Inspirada em Windmill para Servidores de Amsterdã**
+
+Amsterdã é famosa por seus moinhos de vento, que são símbolos icônicos dos Países Baixos. Esses moinhos têm uma história rica, remontando a séculos atrás, quando foram usados para drenar terras alagadas (pôlderes) e moer grãos, ajudando a transformar pântanos em áreas produtivas. A região oeste da Holanda, onde Amsterdã está localizada, fica abaixo do nível do mar, e os moinhos foram essenciais para proteger a cidade das inundações e sustentar sua economia. Alguns moinhos de vento nos Países Baixos, incluindo os próximos a Amsterdã, ainda funcionam.
+
+```bash
+doh-windmill.krakendnsserver.net
+```
+
+```bash
+https://doh-windmill.krakendnsserver.net/dns-query
+```
+
+![image](https://github.com/user-attachments/assets/061d7e63-d6ff-48b9-9bac-598662dd8a2f)
+
+
+**Faça o teste do DNS:**
+
+```bash
+https://browserleaks.com/dns
+```
+
+```bash
+https://dnsleaktest.com/
+```
