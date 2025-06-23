@@ -18,7 +18,7 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 | ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` |                                             | Vultr      |
 | ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    | doh-skyline.krakendnsserver.net             | Vultr      |
 | ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | doh-fujisan.krakendnsserver.net             | Vultr      |
-| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` |                                             | Linode     |
+| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` | doh-valhalla.krakendnsserver.net            | Linode     |
 | ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | doh-merlion.krakendnsserver.net             | Vultr      |
 | ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  | doh-windmill.krakendnsserver.net            | Vultr      |
 | ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     |                                             | Tietokettu |
@@ -616,6 +616,34 @@ https://doh-windmill.krakendnsserver.net/dns-query
 ```
 
 ![image](https://github.com/user-attachments/assets/061d7e63-d6ff-48b9-9bac-598662dd8a2f)
+
+
+**Faça o teste do DNS:**
+
+```bash
+https://browserleaks.com/dns
+```
+
+```bash
+https://dnsleaktest.com/
+```
+
+## 🆕Atualização – Novo Servidor DoH Suécia - DoH-valhalla 23/06/2025
+
+**A História de Valhalla**
+
+Nos tempos antigos, nas terras frias da Escandinávia, os vikings acreditavam que os guerreiros mais corajosos, aqueles que morriam em batalha com honra, eram escolhidos por Odin, o pai de todos os deuses, para viver em Valhalla. Esse salão magnífico, situado em Asgard, o reino dos deuses, era descrito como um lugar de glória eterna, com tetos de escudos dourados e colunas feitas de lanças. Diziam que as portas eram tão vastas que permitiam a entrada de exércitos inteiros, e o chão era coberto com armaduras reluzentes dos heróis caídos. 
+
+
+```bash
+doh-valhalla.krakendnsserver.net
+```
+
+```bash
+https://doh-valhalla.krakendnsserver.net/dns-query
+```
+
+![image](https://github.com/user-attachments/assets/d02675cc-c7c6-46f7-815a-4a3db2d6560f)
 
 
 **Faça o teste do DNS:**
