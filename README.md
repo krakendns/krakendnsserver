@@ -508,3 +508,65 @@ https://dnsleaktest.com/
 ![image](https://github.com/user-attachments/assets/a43361a5-131d-447d-90c4-a2edc5fac095)
 
 
+## A Importância do Proxy Cloudflare (Nuvem Laranja) e Aplicativos Recomendados pelo KrakenDNS 23/06/2025
+
+O Proxy Cloudflare, conhecido como "Nuvem Laranja", desempenha um papel crucial na proteção do tráfego online, oferecendo uma camada adicional de **segurança contra ataques DDoS e interceptações**. No KrakenDNS, priorizamos a **segurança acima de tudo**, garantindo que nossas soluções sejam confiáveis. **Não abrimos mão dessa proteção, mesmo enfrentando desafios de compatibilidade**, pois acreditamos que a privacidade e a integridade dos usuários são fundamentais.
+Infelizmente, o Android nativamente não suporta o **Proxy Cloudflare** de forma direta para algumas configurações específicas, como o uso de DNS sobre HTTPS (DoH). O proxy do Cloudflare tem uma função de proxy reverso para seu servidor web (ou qualquer outro serviço HTTP/HTTPS) **para proteger e acelerar seu site/serviço**, **mascarando seu IP de origem e oferecendo proteção DDoS, WAF, etc**. Porém, essa proteção não foi feita para o DNS HTTPS (DoH). Para oferecer o suporte ao Android o **Proxy Cloudflare não deve estar ativado para os registros A que apontam para o IP do seu servidor DoH**. A Cloudflare tenta se comportar como um proxy web para o seu serviço DoH, o que pode interferir na forma como os clientes DoH (incluindo Android) esperam se comunicar. O DoH não é um site comum que a Cloudflare otimiza e protege da mesma forma. As requisições DoH são requisições POST específicas para um endpoint. O Cloudflare proxy atua como um intermediário TLS. Ele termina a conexão TLS do cliente, processa a requisição e estabelece uma nova conexão TLS com seu servidor de origem. Para DoH, isso pode causar problemas, pois o cliente DoH espera se conectar diretamente ao seu servidor DoH e validar o certificado diretamente. O problema no Android provavelmente decorre da Cloudflare tentando processar as requisições DoH como se fossem requisições HTTP/HTTPS normais de um website, o que não é o caso para DoH. **Segurança vem primeiro. Compatibilidade é ajustada com o tempo.**
+
+**Aplicativos Recomendados**
+
+Para contornar isso, o KrakenDNS recomenda aplicativos que suportam o endpoint /dns-query, permitindo uma experiência segura e personalizada.
+
+**Intra:** Um aplicativo simples, leve e confiável que atua como um proxy DNS local, compatível com DoH. Configure-o para usar nosso endpoint e proteja suas consultas DNS.
+
+**Exemplo de configuração**
+
+```bash
+https://doh-skyline.krakendnsserver.net/dns-query
+```
+
+
+
+![image](https://github.com/user-attachments/assets/4213ad8e-8b28-4021-b4c5-756d70f6b150)
+
+![image](https://github.com/user-attachments/assets/86a0c95f-cf6c-4de3-8fab-9bb09585ac93)
+
+![image](https://github.com/user-attachments/assets/d2f4ff65-6451-4914-b9b9-669445b8c713)
+
+
+
+**RethinkDNS** Mais avançado inclui recursos como firewall por app e bloqueio de anúncios.
+
+**Exemplo de configuração**
+
+```bash
+https://doh-skyline.krakendnsserver.net/dns-query
+```
+
+
+![image](https://github.com/user-attachments/assets/b80baabe-faa1-4715-8a97-9f9e413a0a73)
+
+
+![image](https://github.com/user-attachments/assets/607c05e0-fe57-4984-a6dc-720212d21af7)
+
+![image](https://github.com/user-attachments/assets/bcbeaffc-6ca8-4722-90ab-388652dc160f)
+
+![image](https://github.com/user-attachments/assets/290a0d72-95ba-454b-bacf-f6edb70ef4d8)
+
+![image](https://github.com/user-attachments/assets/0c330543-c890-4c0d-94ab-200934b78568)
+
+**Faça o teste do DNS:**
+
+```bash
+https://browserleaks.com/dns
+```
+
+```bash
+https://dnsleaktest.com/
+```
+
+
+
+
+
+
