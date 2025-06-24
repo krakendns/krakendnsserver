@@ -712,3 +712,29 @@ https://browserleaks.com/dns
 ```bash
 https://dnsleaktest.com/
 ```
+
+
+## 🛡️Atualização do KrakenDNS Política de Backup e Recuperação de Desastres.
+
+Como parte do desenvolvimento do KrakenDNS, estamos investigando medidas para proteger nossos servidores. Gerenciar um serviço público de DNS envolve não apenas performance e segurança, mas também responsabilidade com a continuidade do serviço. O KrakenDNS realiza backups regulares das configurações e snapshots críticos das VPS em provedores que oferecem essa funcionalidade, como a Vultr. para servidores críticos (como os de Nova York, Frankfurt, Japão, e outras regiões com alto tráfego), mantemos o recurso de Backup Automático ativado diretamente no painel da Vultr. Em caso de falha física em um datacenter (incêndio, enchente, falha elétrica, ataque físico ou outro desastre), a Vultr permite mover snapshots para outros datacenters, garantindo a retomada do serviço em nova localização **(com novo IP)**.
+
+**⚠️ Limitação Importante**
+
+Se um datacenter for totalmente danificado e não houver backup, por política da Vultr (e de muitos provedores), não há como recuperar os dados. Por isso, **não operamos servidores críticos** sem ter ao menos uma **cópia de segurança funcional**. Como um projeto independente e com orçamento controlado, tomamos decisões inteligentes para balancear custo e resiliência, garantindo que, mesmo em cenários de desastre, o KrakenDNS retorne ao ar o mais rápido possível.
+
+**Plano de Expansão do KrakenDNS 2025/2026**
+
+| Região       | Provedor                    | Status          |
+| ------------ | --------------------------- | --------------- |
+| Irlanda      | AWS EC2                     | Em planejamento |
+| Inglaterra   | Contabo                     | Em planejamento |
+| Polônia      | Vultr                       | Em breve        |
+| Itália       | Linode                      | Em breve        |
+| Israel       | Vultr                       | Em breve        |
+| Índia        | (Em estudo)                 | Futuro          |
+| Romênia      | (Pausado por enquanto)      | ------          |
+
+
+**Como serão os Backups na AWS EC2**
+
+A AWS EC2 oferece um sistema de Snapshots de Volume EBS, que permite fazer cópias exatas da máquina virtual. **Nosso plano para as VPSs na AWS** será Backup automático via política de ciclo de vida (AWS Backup ou manual via console), Manteremos pelo menos 2 versões de snapshot: uma diária e uma semanal e Se um datacenter AWS tiver problemas físicos, poderemos restaurar rapidamente em outra região AWS próxima (por exemplo, de Irlanda para Frankfurt ou Londres). **Importante** A AWS não oferece IP fixo gratuito em caso de recuperação. Em uma restauração de desastre, o IP mudará, mas atualizaremos os registros DNS e o GitHub o mais rápido possível.
