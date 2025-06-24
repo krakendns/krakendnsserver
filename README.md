@@ -720,7 +720,7 @@ Como parte do desenvolvimento do KrakenDNS, estamos investigando medidas para pr
 
 **⚠️ Limitação Importante**
 
-Se um datacenter for totalmente danificado e não houver backup, por política da Vultr (e de muitos provedores), não há como recuperar os dados. Por isso, **não operamos servidores críticos** sem ter ao menos uma **cópia de segurança funcional**. Como um projeto independente e com orçamento controlado, tomamos decisões inteligentes para balancear custo e resiliência, garantindo que, mesmo em cenários de desastre, o KrakenDNS retorne ao ar o mais rápido possível.
+Se um datacenter for totalmente danificado e não houver backup, por política da Vultr (e de muitos provedores), não há como recuperar os dados. Por isso, **não operamos servidores críticos** sem ter ao menos uma **cópia de segurança funcional**. Como um projeto independente e com orçamento controlado, tomamos decisões inteligentes para balancear os custos e garantir que, mesmo em cenários de desastre, o KrakenDNS retorne ao ar o mais rápido possível.
 
 **Plano de Expansão do KrakenDNS 2025/2026**
 
