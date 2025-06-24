@@ -15,14 +15,16 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 
 | Região         | IP                | DOH                                         | Provedor      |
 |----------------|-------------------|---------------------------------------------|---------------|
-| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` |                                             | Vultr      |
+| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` | doh-liberty.krakendnsserver.net             | Vultr      |
 | ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    | doh-skyline.krakendnsserver.net             | Vultr      |
 | ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | doh-fujisan.krakendnsserver.net             | Vultr      |
 | ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` | doh-valhalla.krakendnsserver.net            | Linode     |
 | ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | doh-merlion.krakendnsserver.net             | Vultr      |
 | ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  | doh-windmill.krakendnsserver.net            | Vultr      |
-| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     |                                             | Tietokettu |
+| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     | doh-kalevala.krakendnsserver.net            | Tietokettu |
 | ![AU](https://flagcdn.com/24x18/au.png) Australia  | `46.250.240.138`  | doh-eucalyptus.krakendnsserver.net          | Contabo    |
+
+
 ## Status
 
 [![](https://img.shields.io/badge/KrakenDNS-Status%3A%20Online-brightgreen)](https://stats.uptimerobot.com/eAyelEtTEt)
@@ -644,6 +646,61 @@ https://doh-valhalla.krakendnsserver.net/dns-query
 ```
 
 ![image](https://github.com/user-attachments/assets/d02675cc-c7c6-46f7-815a-4a3db2d6560f)
+
+
+**Faça o teste do DNS:**
+
+```bash
+https://browserleaks.com/dns
+```
+
+```bash
+https://dnsleaktest.com/
+```
+
+## 🆕Atualização – Novo Servidor DoH New York - DoH-liberty 24/06/2025
+
+**A História da Estátua da Liberdade**
+
+No coração da baía de Nova York, ergue-se a Estátua da Liberdade, um presente da França aos Estados Unidos em 1886, simbolizando esperança e liberdade. Esculpida por Frédéric Auguste Bartholdi e com sua estrutura interna projetada por Gustave Eiffel, a estátua segura uma tocha que ilumina o caminho e uma tábua com a data da Declaração de Independência, 4 de julho de 1776. Por mais de um século, ela tem sido um farol de liberdade, resistindo ao tempo, às tempestades e às mudanças. Como uma homenagem a esse símbolo o servidor DoH foi projetado para iluminar o mundo digital, oferecendo consultas DNS seguras e privadas. Assim como a estátua resistiu a furacões e guerras, o doh-liberty foi projetado para enfrentar desafios cibernéticos, protegendo os dados dos usuários com criptografia moderna. Cada requisição ao endpoint /dns-query é como um raio de luz libertador, conectando pessoas em busca de uma internet livre e segura. A lenda diz que, nas noites escuras, a tocha de doh-liberty brilha ainda mais forte, refletindo a resiliência de Nova York e o espírito do KrakenDNS. 
+
+```bash
+doh-liberty.krakendnsserver.net
+```
+
+```bash
+https://doh-liberty.krakendnsserver.net/dns-query
+```
+
+![image](https://github.com/user-attachments/assets/ed877976-0daa-4d07-9f58-7b4d1da754b1)
+
+**Faça o teste do DNS:**
+
+```bash
+https://browserleaks.com/dns
+```
+
+```bash
+https://dnsleaktest.com/
+```
+
+## 🆕Atualização – Novo Servidor DoH Finlândia - DoH-kalevala 24/06/2025
+
+**A História de Kalevala**
+
+A lenda diz que, nas profundezas das florestas finlandesas, onde o vento sussurra segredos antigos, o sábio Väinämöinen, herói do Kalevala, forjou um cântico mágico para proteger o conhecimento de seu povo. Esse cântico ecoou através dos tempos, transformando-se em uma rede invisível de proteção. Hoje, doh-kalevala carrega esse legado digitalmente, funcionando como um guardião das consultas DNS. Construído em um data center finlandês, ele resiste a tempestades de dados como Väinämöinen enfrentou os desafios de Sampo, o objeto mítico de poder. Cada requisição ao endpoint /dns-query é como um verso desse cântico, criptografado e seguro, pronto para guiar os usuários pelo vasto mar da internet.
+
+
+```bash
+doh-kalevala.krakendnsserver.net
+```
+
+```bash
+https://doh-kalevala.krakendnsserver.net/dns-query
+```
+
+
+![image](https://github.com/user-attachments/assets/2e72678f-4797-43de-afde-106ad0d467b6)
 
 
 **Faça o teste do DNS:**
