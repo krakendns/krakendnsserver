@@ -738,3 +738,27 @@ Se um datacenter for totalmente danificado e não houver backup, por política d
 **Como serão os Backups na AWS EC2**
 
 A AWS EC2 oferece um sistema de Snapshots de Volume EBS, que permite fazer cópias exatas da máquina virtual. **Nosso plano para as VPS na AWS** será Backup automático via política de ciclo de vida (AWS Backup ou manual via console), Manteremos pelo menos 2 versões de snapshot: uma diária e uma semanal e Se um datacenter AWS tiver problemas físicos, poderemos restaurar rapidamente em outra região AWS próxima (por exemplo, de Irlanda para Frankfurt ou Londres). **Importante** A AWS não oferece IP fixo gratuito em caso de recuperação. Em uma restauração de desastre, o IP mudará, mas atualizaremos os registros DNS e o GitHub o mais rápido possível.
+
+## 🛡️🔄 Atualização: Suporte Nativo a DoT no Android e Otimizações no Kraken
+
+Olá, comunidade!
+
+Estamos entusiasmados em compartilhar que até 27/06/2025 (ou antes) todos os nossos servidores terão suporte nativo ao DNS sobre TLS (DoT) no Android. Essa mudança faz parte de um esforço contínuo para melhorar a segurança, a privacidade e o desempenho das resoluções de DNS em nossos serviços.
+
+**⚠️ Avisos Importantes**
+Os usuários podem perceber erros relacionados ao **DNS sobre HTTPS (DoH)**. Esses problemas são decorrentes das novas configurações que estamos implementando para suportar o **DoT nativamente**. Pedimos desculpas por qualquer inconveniente e garantimos que nossa equipe está trabalhando para estabilizar o ambiente o mais rápido possível.
+O Kraken está passando por uma evolução significativa! Além do suporte ao DoT nativo, estamos apresentando otimizações que vão melhorar a escalabilidade, a confiabilidade e a experiência geral do usuário.
+
+**Respondendo algumas dúvida:**
+
+**Pergunta:** O suporte é somente para Android? O iOS pode funcionar também com DoT?
+
+**Resposta:** Sim o IOS suporta DOT mas com diferenças em relação ao Android. O iOS não tem uma opção nativa visível como o Android para **“DNS privado”**Mas é possível configurar DoT no iOS usando o perfil de configuração **(Mobileconfig) com DNS-over-TLS definido**.
+
+**Pergunta:** O DoT é mais seguro que DoH?
+
+**Resposta:** Para dispositivos móveis, sim! DoT tem menos overhead e é mais eficiente para conexões móveis, enquanto DoH é melhor para navegadores web por usar HTTP padrão.
+
+**Pergunta:** Qual protocolo é melhor contra censura e DPI: DoT ou DoH?
+
+**Resposta:** O **DoH (DNS sobre HTTPS) costuma ser mais eficaz contra DPI**, pois seu tráfego se mistura com conexões HTTPS comuns (como sites e serviços web), tornando mais difícil para sistemas de inspeção bloquear sem causar danos colaterais. Já o **DoT**, apesar de mais eficiente e leve, utiliza uma porta padrão **(853)**, que pode ser mais fácil de bloquear em redes com censura ativa. Por isso, o KrakenDNS oferece ambos: DoT para desempenho em redes abertas e DoH como alternativa mais resiliente em ambientes restritivos. Recomendamos a Instalação do Aplicativo **intra e RethinkDNS**
