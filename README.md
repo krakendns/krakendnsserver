@@ -753,7 +753,7 @@ O Kraken está passando por uma evolução significativa! Além do suporte ao Do
 
 **Pergunta:** O suporte é somente para Android? O iOS pode funcionar também com DoT?
 
-**Resposta:** Sim o IOS suporta DOT mas com diferenças em relação ao Android. O iOS não tem uma opção nativa visível como o Android para **DNS privado** Mas é possível configurar DoT no iOS usando o perfil de configuração **(Mobileconfig) com DNS-over-TLS definido**.
+**Resposta**: Sim, o IOS suporta DOT, mas com diferenças em relação ao Android. O iOS não tem uma opção nativa visível como o Android para DNS privado, mas é possível configurar DoT no iOS usando o perfil de configuração (Mobileconfig) com DNS-over-TLS definido.
 
 **Pergunta:** O DoT é mais seguro que DoH?
 
