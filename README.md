@@ -13,16 +13,16 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 ## 🌐 Endereços Globais – KrakenDNS
 
 
-| Região         | IP                | DOH                                         | Provedor      |
-|----------------|-------------------|---------------------------------------------|---------------|
-| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` | doh-liberty.krakendnsserver.net             | Vultr      |
-| ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    | doh-skyline.krakendnsserver.net             | Vultr      |
-| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | doh-fujisan.krakendnsserver.net             | Vultr      |
-| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` | doh-valhalla.krakendnsserver.net            | Linode     |
-| ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | doh-merlion.krakendnsserver.net             | Vultr      |
-| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  | doh-windmill.krakendnsserver.net            | Vultr      |
-| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     | doh-kalevala.krakendnsserver.net            | Tietokettu |
-| ![AU](https://flagcdn.com/24x18/au.png) Australia  | `46.250.240.138`  | doh-eucalyptus.krakendnsserver.net          | Contabo    |
+| Região         | IP                |
+|----------------|-------------------|
+| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` |
+| ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    |
+| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    |
+| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` |
+| ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  |
+| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  |
+| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     |
+| ![AU](https://flagcdn.com/24x18/au.png) Australia  | `46.250.240.138`  |
 
 
 ## Status
@@ -149,56 +149,6 @@ pihole restartdns
 
 ![mikrotik 7](https://github.com/user-attachments/assets/128ea026-7e48-44c5-8af5-c4d826880ba7)
 
-## Mikrotik DOH:
-
-**New Terminal**
-
-```bash
-/tool fetch url=https://curl.se/ca/cacert.pem
-
-/certificate import file-name=cacert.pem
-
-System -> Certificates (Confirme se os certificados foram importados.)
-```
-
-```bash
-IP -> DNS
-
-46.250.240.138
-
-https://doh-eucalyptus.krakendnsserver.net/dns-query
-
-```
-
-![image](https://github.com/user-attachments/assets/8bfbf35c-101a-4af9-a2ea-57e88a10a028)
-
-## Firefox
-
-![image](https://github.com/user-attachments/assets/c1cdbc85-a137-4674-8316-527610f9947a)
-
-## Brave
-
-![image](https://github.com/user-attachments/assets/2c175868-c731-41cc-8492-842178768ff6)
-
-![image](https://github.com/user-attachments/assets/bcd8ee7d-ac25-4ff4-b92f-9dde5d621395)
-
-![image](https://github.com/user-attachments/assets/17126c79-4c9f-4765-8abc-679a1def5fbf)
-
-![image](https://github.com/user-attachments/assets/aaf35f81-3be6-405d-90bb-ebacdbec929b)
-
-
-## Recomendamos o mullvad browser
-
-
-```bash
-https://mullvad.net/pt/download/vpn/windows
-
-https://mullvad.net/en/download/browser/linux
-
-https://mullvad.net/en/download/browser/macos
-```
-
-![image](https://github.com/user-attachments/assets/e2dd293b-7315-4d7e-ba37-0191133af81c)
 
 
 ## TP-Link Huawei:
@@ -250,16 +200,6 @@ Mesmo sem DoH no lado do usuário, a privacidade é garantida dentro do Kraken c
 🔒 [Mullvad](https://mullvad.net/pt) — Por provar que privacidade de verdade ainda existe.  
 🚫 [AdGuard](https://adguard.com) — Pelo bloqueio de anúncios e tracking.  
 👨‍👩‍👧‍👦 [CleanBrowsing](https://cleanbrowsing.org/) — Por oferecer proteção familiar de qualidade.
-
-
-## 🔁 Fluxo de uma consulta no KrakenDNS HOH
-
-![Fluxo DOH KrakenDNS](https://github.com/user-attachments/assets/db194e34-9c2d-47f3-ae8a-2559dab64a27)
-
-    Usuário (Browser, Mikrotik, Desktop) --> HTTPS DoH https://doh-eucalyptus.krakendnsserver.net/dns-query| 
-    --> (Caddy) -->Redireciona --> (dnsdist) --> Encaminha para o AdguardHome
-     --> Resposta HTTPS
-    
 
 
 ## É fundamental garantir a transparência com os usuários e evitar qualquer promessa enganosa.
@@ -379,161 +319,7 @@ Temos o prazer de anunciar um marco importante na jornada do KrakenDNS. Nossa pr
 
 A **Tietokettu** é uma empresa fundada em 2019, focada em serviços de hospedagem como web hosting, VPS, servidores dedicados e até serviços de gaming. Eles operam a partir de um data center próprio em **Lempäälä**, **Finlândia**. As Avaliações em plataformas como Trustpilot (4.5 estrelas) e HostAdvice (4.9 estrelas) reforçam a reputação da Tietokettu como uma escolha confiável para o KrakenDNS.
 
-## 🆕 Atualização 18/06/2025
-
-Antes de tudo, quero pedir desculpas pela demora em avançar com o projeto **KrakenDNS**. Manter um **DNS público** e aberto ao mundo é uma tarefa **extremamente desafiadora**, especialmente quando o objetivo é garantir **desempenho, segurança, privacidade e, acima de tudo, respeito aos usuários**.
-Além de lidar com a complexidade técnica, também preciso conciliar o **desenvolvimento com estudos e trabalho**, o que naturalmente torna o ritmo de evolução mais lento do que eu gostaria. Amanhã, 19 de junho de 2025, vamos fazer a estreia oficial do nosso serviço **DNS over HTTPS (DoH)**, utilizando uma arquitetura personalizada com **Caddy e dnsdist**.
-
-**🌐 Destaques da Nova Configuração KrakenDNS**
-
-**100% Personalizada**: Criamos uma solução sob medida, com Caddy como proxy reverso gerenciando os certificados SSL, e dnsdist lidando com as consultas DNS de forma rápida e segura.
-
-**Sem painel exposto**: Nosso painel AdGuard Home continua ativo internamente, mas totalmente protegida do acesso público.
-
-**DNS over HTTPS (DoH)**: Agora, usuários poderão utilizar KrakenDNS de forma segura, criptografada e com foco total em privacidade.
-
-Os códigos de configuração serão disponibilizados no GitHub, para que qualquer pessoa possa adaptar e contribuir. Por uma questão de **segurança, responsabilidade e respeito aos princípios que guiam o projeto KrakenDNS**, **não divulgaremos o passo a passo completo de implementação, nem detalhes sensíveis da infraestrutura utilizada**. O foco é garantir que o serviço permaneça **seguro, estável e protegido contra abusos**.
-As configurações disponibilizadas no GitHub serão exemplos **genéricos**, apenas para fins de aprendizado e estudo.
-
-O primeiro servidor a receber essa configuração será o **Eucalyptus, hospedado na Austrália**. Escolhemos esse nome em homenagem à **árvore nativa australiana**, um símbolo de **resiliência e adaptação**. Acreditamos que essas **qualidades são essenciais para um DNS público confiável.**
-
-**Por que migramos da DigitalOcean para a Vultr**
-
-Durante o desenvolvimento do **KrakenDNS**, aprendemos que gestão de acesso SSH e controle sobre chaves de autenticação são pontos críticos para a segurança de qualquer infraestrutura. Após algumas **dificuldades e limitações operacionais envolvendo a gestão de chaves SSH na DigitalOcean**, tomamos a decisão de migrar a nossa infraestrutura para a Vultr, que oferece um painel de gerenciamento de **SSH mais direto, flexível e seguro, permitindo uma administração mais eficiente da VPS**. Essa mudança foi feita de forma **planejada**, visando reduzir riscos futuros, evitar bloqueios administrativos em caso de reinstalações e garantir que sempre teremos controle sobre a VPS.
-
-## 🆕Atualização Importante – Estreia Oficial do KrakenDNS Doh-Eucalyptus 19/06/2025
-
-Hoje é um dia muito especial estamos fazendo a estreia oficial do **Eucalyptus**, nossa nova camada de resolução **DNS over HTTPS (DoH)** O serviço já está funcionando com sucesso no Mikrotik e em browsers como Firefox e Chrome (em desktops). O suporte ao Android ainda está em fase de desenvolvimento, mas já estamos trabalhando nisso com muito carinho. Agradecemos a paciência de todos!
-Hoje também estamos liberando os **códigos de exemplo**, mostrando detalhes da nossa configuração com **Caddy e dnsdist** (sempre respeitando as boas práticas de segurança da nossa infraestrutura). Sinta-se à vontade para testar, sugerir melhorias ou até adaptar o setup para outras plataformas.
-
-```bash
-doh-eucalyptus.krakendnsserver.net
-```
-```bash
-https://doh-eucalyptus.krakendnsserver.net/dns-query
-```
-
-**Faça o teste do DNS:**
-
-```bash
-https://browserleaks.com/dns
-```
-
-```bash
-https://dnsleaktest.com/
-```
-
-![image](https://github.com/user-attachments/assets/13c9a956-f691-4ba0-9921-20666721b7d1)
-
-## 🆕Atualização – Novo Servidor DoH em Singapura DoH-Merlion 20/06/2025
-
-**História do Merlion**
-
-O Merlion é um símbolo turístico de Singapura. A lenda diz que o príncipe Sang Nila Utama avistou um leão ao chegar à ilha no século XIV, dando origem ao nome "Singapura" (cidade do leão). O corpo de peixe homenageia as origens da ilha como uma vila de pescadores chamada Temasek. Criado em 1964 por Alec Fraser-Brunner como logotipo da Singapore Tourism Board, o Merlion ganhou vida em forma de estátua em 1972, esculpido por Lim Nang Seng. Localizado inicialmente na foz do rio Singapura, foi realocado em 2002 para o Merlion Park, onde continua a atrair visitantes com sua vista para a Marina Bay.
-
-Queremos que o Kraken continue crescendo de forma segura e resiliente! 🦑🌍
-
-
-```bash
-doh-merlion.krakendnsserver.net
-```
-
-```bash
-https://doh-merlion.krakendnsserver.net/dns-query
-```
-
-
-**Faça o teste do DNS:**
-
-```bash
-https://browserleaks.com/dns
-```
-
-```bash
-https://dnsleaktest.com/
-```
-
-![image](https://github.com/user-attachments/assets/41c6e294-bb2e-426c-8a64-51a6740cc3f4)
-
-## 🆕Atualização – Novo Servidor DoH no Japão DoH-Fujisan 21/06/2025
-
-**História do Fujisan🌋**
-
-O Monte Fujisan é a montanha mais alta do Japão, com 3.776 metros. Sua simetria perfeita e cones vulcânicos refletem força e harmonia, sendo Patrimônio Mundial da UNESCO desde 2013. Localizado a cerca de 100 km de Tóquio, é um marco natural que inspira inovação e conexão. O servidor está localizado na região de Tóquio, com baixa latência para usuários do Japão e Ásia.
-
-```bash
-doh-fujisan.krakendnsserver.net
-```
-
-```bash
-https://doh-fujisan.krakendnsserver.net/dns-query
-```
-
-
-**Faça o teste do DNS:**
-
-```bash
-https://browserleaks.com/dns
-```
-
-```bash
-https://dnsleaktest.com/
-```
-![image](https://github.com/user-attachments/assets/7881febd-82b3-46cc-9e5b-6950ba4a3301)
-
-
-## 🆕Atualização – Novo Servidor DoH Frankfurt - Doh-Skyline 21/06/2025
-
-**História do Skyline**
-
-Frankfurt é o coração digital da Europa, abrigando o DE-CIX o maior ponto de troca de internet do continente. Localizado estrategicamente no centro da Europa, oferece conectividade premium e baixa latência para usuários em toda a região. Assim como o skyline moderno de Frankfurt simboliza inovação e conectividade, o DoH-Skyline representa mais um passo na evolução do KrakenDNS como um hub global.
-
-
-```bash
-doh-skyline.krakendnsserver.net
-```
-
-```bash
-https://doh-skyline.krakendnsserver.net/dns-query
-```
-
-**Faça o teste do DNS:**
-
-```bash
-https://browserleaks.com/dns
-```
-
-```bash
-https://dnsleaktest.com/
-```
-![image](https://github.com/user-attachments/assets/a43361a5-131d-447d-90c4-a2edc5fac095)
-
-
-## A Importância do Proxy Cloudflare (Nuvem Laranja) e Aplicativos Recomendados pelo KrakenDNS 23/06/2025
-
-O Proxy Cloudflare, conhecido como "Nuvem Laranja", desempenha um papel crucial na proteção do tráfego online, oferecendo uma camada adicional de **segurança contra ataques DDoS e interceptações**. No KrakenDNS, priorizamos a **segurança acima de tudo**, garantindo que nossas soluções sejam confiáveis. **Não abrimos mão dessa proteção, mesmo enfrentando desafios de compatibilidade**, pois acreditamos que a privacidade e a integridade dos usuários são fundamentais.
-Infelizmente, o Android nativamente não suporta o **Proxy Cloudflare** de forma direta para algumas configurações específicas, como o uso de DNS sobre HTTPS (DoH). O proxy do Cloudflare tem uma função de proxy reverso para seu servidor web (ou qualquer outro serviço HTTP/HTTPS) **para proteger e acelerar seu site/serviço**, **mascarando seu IP de origem e oferecendo proteção DDoS, WAF, etc**. Porém, essa proteção não foi feita para o DNS HTTPS (DoH). Para oferecer o suporte ao Android o **Proxy Cloudflare não deve estar ativado para os registros A que apontam para o IP do seu servidor DoH**. A Cloudflare tenta se comportar como um proxy web para o seu serviço DoH, o que pode interferir na forma como os clientes DoH (incluindo Android) esperam se comunicar. O DoH não é um site comum que a Cloudflare otimiza e protege da mesma forma. As requisições DoH são requisições POST específicas para um endpoint. O Cloudflare proxy atua como um intermediário TLS. Ele termina a conexão TLS do cliente, processa a requisição e estabelece uma nova conexão TLS com seu servidor de origem. Para DoH, isso pode causar problemas, pois o cliente DoH espera se conectar diretamente ao seu servidor DoH e validar o certificado diretamente. O problema no Android provavelmente decorre da Cloudflare tentando processar as requisições DoH como se fossem requisições HTTP/HTTPS normais de um website, o que não é o caso para DoH. **Segurança vem primeiro. Compatibilidade é ajustada com o tempo.**
-
-**Aplicativos Recomendados**
-
-Para contornar isso, o KrakenDNS recomenda aplicativos que suportam o endpoint /dns-query, permitindo uma experiência segura e personalizada.
-
-**Intra:** Um aplicativo simples, leve e confiável que atua como um proxy DNS local, compatível com DoH. Configure-o para usar nosso endpoint e proteja suas consultas DNS.
-
-**Exemplo de configuração**
-
-```bash
-https://doh-skyline.krakendnsserver.net/dns-query
-```
-
-
-
-![image](https://github.com/user-attachments/assets/4213ad8e-8b28-4021-b4c5-756d70f6b150)
-
-![image](https://github.com/user-attachments/assets/86a0c95f-cf6c-4de3-8fab-9bb09585ac93)
-
-![image](https://github.com/user-attachments/assets/d2f4ff65-6451-4914-b9b9-669445b8c713)
-
+# Aplicativos Recomendados
 
 
 **RethinkDNS** Mais avançado inclui recursos como firewall por app e bloqueio de anúncios.
@@ -554,7 +340,7 @@ https://doh-skyline.krakendnsserver.net/dns-query
 
 ![image](https://github.com/user-attachments/assets/290a0d72-95ba-454b-bacf-f6edb70ef4d8)
 
-![image](https://github.com/user-attachments/assets/0c330543-c890-4c0d-94ab-200934b78568)
+
 
 **Faça o teste do DNS:**
 
@@ -603,115 +389,6 @@ Em NAT DNSNAT redirecionamos o Mikrotik apenas para o DNS que escolhemos. Durant
 
 
 
-## 🆕Atualização – Novo Servidor DoH Amsterdã - Doh-windmill 23/06/2025
-
-**A Origem Inspirada em Windmill para Servidores de Amsterdã**
-
-Amsterdã é famosa por seus moinhos de vento, que são símbolos icônicos dos Países Baixos. Esses moinhos têm uma história rica, remontando a séculos atrás, quando foram usados para drenar terras alagadas (pôlderes) e moer grãos, ajudando a transformar pântanos em áreas produtivas. A região oeste da Holanda, onde Amsterdã está localizada, fica abaixo do nível do mar, e os moinhos foram essenciais para proteger a cidade das inundações e sustentar sua economia. Alguns moinhos de vento nos Países Baixos, incluindo os próximos a Amsterdã, ainda funcionam.
-
-```bash
-doh-windmill.krakendnsserver.net
-```
-
-```bash
-https://doh-windmill.krakendnsserver.net/dns-query
-```
-
-![image](https://github.com/user-attachments/assets/061d7e63-d6ff-48b9-9bac-598662dd8a2f)
-
-
-**Faça o teste do DNS:**
-
-```bash
-https://browserleaks.com/dns
-```
-
-```bash
-https://dnsleaktest.com/
-```
-
-## 🆕Atualização – Novo Servidor DoH Suécia - DoH-valhalla 23/06/2025
-
-**A História de Valhalla**
-
-Nos tempos antigos, nas terras frias da Escandinávia, os vikings acreditavam que os guerreiros mais corajosos, aqueles que morriam em batalha com honra, eram escolhidos por Odin, o pai de todos os deuses, para viver em Valhalla. Esse salão magnífico, situado em Asgard, o reino dos deuses, era descrito como um lugar de glória eterna, com tetos de escudos dourados e colunas feitas de lanças. Diziam que as portas eram tão vastas que permitiam a entrada de exércitos inteiros, e o chão era coberto com armaduras reluzentes dos heróis caídos. Que as consultas DNS que passarem por Valhalla sejam rápidas como o voo de um corvo de Odin, e que cada usuário encontre o destino digital que busca, com segurança.
-
-
-```bash
-doh-valhalla.krakendnsserver.net
-```
-
-```bash
-https://doh-valhalla.krakendnsserver.net/dns-query
-```
-
-![image](https://github.com/user-attachments/assets/d02675cc-c7c6-46f7-815a-4a3db2d6560f)
-
-
-**Faça o teste do DNS:**
-
-```bash
-https://browserleaks.com/dns
-```
-
-```bash
-https://dnsleaktest.com/
-```
-
-## 🆕Atualização – Novo Servidor DoH New York - DoH-liberty 24/06/2025
-
-**A História da Estátua da Liberdade**
-
-No coração da baía de Nova York, ergue-se a Estátua da Liberdade, um presente da França aos Estados Unidos em 1886, simbolizando esperança e liberdade. Esculpida por Frédéric Auguste Bartholdi e com sua estrutura interna projetada por Gustave Eiffel, a estátua segura uma tocha que ilumina o caminho e uma tábua com a data da Declaração de Independência, 4 de julho de 1776. Por mais de um século, ela tem sido um farol de liberdade, resistindo ao tempo, às tempestades e às mudanças. Como uma homenagem a esse símbolo o servidor DoH foi projetado para iluminar o mundo digital, oferecendo consultas DNS seguras e privadas. Assim como a estátua resistiu a furacões e guerras, o doh-liberty foi projetado para enfrentar desafios cibernéticos, protegendo os dados dos usuários com criptografia moderna. Cada requisição ao endpoint /dns-query é como um raio de luz libertador, conectando pessoas em busca de uma internet livre e segura. A lenda diz que, nas noites escuras, a tocha de doh-liberty brilha ainda mais forte, refletindo a resiliência de Nova York e o espírito do KrakenDNS. 
-
-```bash
-doh-liberty.krakendnsserver.net
-```
-
-```bash
-https://doh-liberty.krakendnsserver.net/dns-query
-```
-
-![image](https://github.com/user-attachments/assets/ed877976-0daa-4d07-9f58-7b4d1da754b1)
-
-**Faça o teste do DNS:**
-
-```bash
-https://browserleaks.com/dns
-```
-
-```bash
-https://dnsleaktest.com/
-```
-
-## 🆕Atualização – Novo Servidor DoH Finlândia - DoH-kalevala 24/06/2025
-
-**A História de Kalevala**
-
-A lenda diz que, nas profundezas das florestas finlandesas, onde o vento sussurra segredos antigos, o sábio Väinämöinen, herói do Kalevala, forjou um cântico mágico para proteger o conhecimento de seu povo. Esse cântico ecoou através dos tempos, transformando-se em uma rede invisível de proteção. Hoje, doh-kalevala carrega esse legado digitalmente, funcionando como um guardião das consultas DNS. Construído em um data center finlandês, ele resiste a tempestades de dados como Väinämöinen enfrentou os desafios de Sampo, o objeto mítico de poder. Cada requisição ao endpoint /dns-query é como um verso desse cântico, criptografado e seguro, pronto para guiar os usuários pelo vasto mar da internet.
-
-
-```bash
-doh-kalevala.krakendnsserver.net
-```
-
-```bash
-https://doh-kalevala.krakendnsserver.net/dns-query
-```
-
-
-![image](https://github.com/user-attachments/assets/2e72678f-4797-43de-afde-106ad0d467b6)
-
-
-**Faça o teste do DNS:**
-
-```bash
-https://browserleaks.com/dns
-```
-
-```bash
-https://dnsleaktest.com/
-```
 
 
 ## 🛡️Atualização do KrakenDNS Política de Backup e Recuperação de Desastres.
@@ -739,26 +416,4 @@ Se um datacenter for totalmente danificado e não houver backup, por política d
 
 A AWS EC2 oferece um sistema de Snapshots de Volume EBS, que permite fazer cópias exatas da máquina virtual. **Nosso plano para as VPS na AWS** será Backup automático via política de ciclo de vida (AWS Backup ou manual via console), Manteremos pelo menos 2 versões de snapshot: uma diária e uma semanal e Se um datacenter AWS tiver problemas físicos, poderemos restaurar rapidamente em outra região AWS próxima (por exemplo, de Irlanda para Frankfurt ou Londres). **Importante** A AWS não oferece IP fixo gratuito em caso de recuperação. Em uma restauração de desastre, o IP mudará, mas atualizaremos os registros DNS e o GitHub o mais rápido possível.
 
-## 🛡️🔄 Atualização: Suporte Nativo a DoT no Android e Otimizações no Kraken
 
-Olá, comunidade!
-
-Estamos entusiasmados em compartilhar que até 27/06/2025 (ou antes) todos os nossos servidores terão suporte nativo ao DNS sobre TLS (DoT) no Android. Essa mudança faz parte de um esforço contínuo para melhorar a segurança, a privacidade e o desempenho das resoluções de DNS em nossos serviços.
-
-**⚠️ Avisos Importantes**
-Os usuários podem perceber erros relacionados ao **DNS sobre HTTPS (DoH)**. Esses problemas são decorrentes das novas configurações que estamos implementando para suportar o **DoT nativamente**. Pedimos desculpas por qualquer inconveniente e garantimos que nossa equipe está trabalhando para estabilizar o ambiente o mais rápido possível.
-O Kraken está passando por uma evolução significativa! Além do suporte ao DoT nativo, estamos apresentando otimizações que vão melhorar a escalabilidade, a confiabilidade e a experiência geral do usuário.
-
-**Respondendo algumas dúvida:**
-
-**Pergunta:** O suporte é somente para Android? O iOS pode funcionar também com DoT?
-
-**Resposta**: Sim, o IOS suporta DOT, mas com diferenças em relação ao Android. O iOS não tem uma opção nativa visível como o Android para DNS privado, mas é possível configurar DoT no iOS usando o perfil de configuração (Mobileconfig) com DNS-over-TLS definido.
-
-**Pergunta:** O DoT é mais seguro que DoH?
-
-**Resposta:** Para dispositivos móveis, sim! DoT tem menos overhead e é mais eficiente para conexões móveis, enquanto DoH é melhor para navegadores web por usar HTTP padrão.
-
-**Pergunta:** Qual protocolo é melhor contra censura e DPI: DoT ou DoH?
-
-**Resposta:** O **DoH (DNS sobre HTTPS) costuma ser mais eficaz contra DPI**, pois seu tráfego se mistura com conexões HTTPS comuns (como sites e serviços web), tornando mais difícil para sistemas de inspeção bloquear sem causar danos colaterais. Já o **DoT**, apesar de mais eficiente e leve, utiliza uma porta padrão **(853)**, que pode ser mais fácil de bloquear em redes com censura ativa. Por isso, o KrakenDNS oferece ambos: DoT para desempenho em redes abertas e DoH como alternativa mais resiliente em ambientes restritivos. Recomendamos a Instalação do Aplicativo **intra e RethinkDNS**
