@@ -13,16 +13,16 @@ KrakenDNS é um projeto independente de resolução DNS que oferece **respostas 
 ## 🌐 Endereços Globais – KrakenDNS
 
 
-| Região         | IP                |
+| Região         | IP                | Provedor      |
 |----------------|-------------------|
-| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` |
-| ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    |
-| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    |
-| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` |
-| ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  |
-| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  |
-| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     |
-| ![AU](https://flagcdn.com/24x18/au.png) Australia  | `46.250.240.138`  |
+| ![US](https://flagcdn.com/24x18/us.png) New York   | `162.243.238.171` | Vultr      |
+| ![DE](https://flagcdn.com/24x18/de.png) Frankfurt  | `199.247.21.0`    | Vultr      |
+| ![JP](https://flagcdn.com/24x18/jp.png) Tokyo      | `45.77.28.252`    | Vultr      |
+| ![SE](https://flagcdn.com/24x18/se.png) Sweden     | `172.234.100.170` | Linode     |
+| ![SG](https://flagcdn.com/24x18/sg.png) Singapore  | `139.180.135.67`  | Vultr      |
+| ![NL](https://flagcdn.com/24x18/nl.png) Amsterdam  | `95.179.151.156`  | Vultr      |
+| ![FI](https://flagcdn.com/24x18/fi.png) Finland    | `5.61.88.206`     | tietokettu |
+| ![AU](https://flagcdn.com/24x18/au.png) Australia  | `46.250.240.138`  | Contabo    |
 
 
 ## Status
