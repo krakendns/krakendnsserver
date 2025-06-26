@@ -326,11 +326,6 @@ A **Tietokettu** é uma empresa fundada em 2019, focada em serviços de hospedag
 
 **Exemplo de configuração**
 
-```bash
-https://doh-skyline.krakendnsserver.net/dns-query
-```
-
-
 ![image](https://github.com/user-attachments/assets/b80baabe-faa1-4715-8a97-9f9e413a0a73)
 
 
@@ -338,7 +333,7 @@ https://doh-skyline.krakendnsserver.net/dns-query
 
 ![image](https://github.com/user-attachments/assets/bcbeaffc-6ca8-4722-90ab-388652dc160f)
 
-![image](https://github.com/user-attachments/assets/290a0d72-95ba-454b-bacf-f6edb70ef4d8)
+
 
 
 
