@@ -49,7 +49,7 @@ log_level = 2
 [static]
 
 [static.'controld']
-  stamp = 'Configuração personalizada - ControlD'
+  stamp = 'Configuração personalizada - ControlD' ou AdguardHome 
 
 ```
 **O DNSCrypt** é uma camada adicional de segurança que protege as comunicações DNS entre nossos servidores e os resolvedores upstream, garantindo a criptografia, ofuscação, melhor controle sobre upstreams e Balanceamento de carga.
@@ -63,6 +63,16 @@ https://controld.com/plans?step=plans&type=select
 ![image](https://github.com/user-attachments/assets/d38f8d46-e50e-4e97-98b6-55e86ab18bb7)
 
 ![image](https://github.com/user-attachments/assets/cdca64a8-f350-409f-85db-a9682f81a61f)
+
+```bash
+https://adguard-dns.io/pt_br/public-dns.html
+```
+
+![image](https://github.com/user-attachments/assets/f2b0fa2d-a224-4853-8cdc-4b10304b2e50)
+
+
+**Configurações gratuitas no AdguardDNS**
+
 
 
 ## Cloudflare Proxy Fallback DoH
