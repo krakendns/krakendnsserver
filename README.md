@@ -398,17 +398,16 @@ Se um datacenter for totalmente danificado e não houver backup, por política d
 
 | Região       | Provedor                    | Status          |
 | ------------ | --------------------------- | --------------- |
-| Irlanda      | AWS EC2                     | Em planejamento |
 | Inglaterra   | Contabo                     | Em planejamento |
 | Polônia      | Vultr                       | Em breve        |
 | Itália       | Linode                      | Em breve        |
 | Israel       | Vultr                       | Em breve        |
 | Índia        | (Em estudo)                 | Futuro          |
-| Romênia      | (Pausado por enquanto)      | ------          |
+| Romênia      | (Em estudo)                 | Em breve        |
 
 
-**Como serão os Backups na AWS EC2**
 
-A AWS EC2 oferece um sistema de Snapshots de Volume EBS, que permite fazer cópias exatas da máquina virtual. **Nosso plano para as VPS na AWS** será Backup automático via política de ciclo de vida (AWS Backup ou manual via console), Manteremos pelo menos 2 versões de snapshot: uma diária e uma semanal e Se um datacenter AWS tiver problemas físicos, poderemos restaurar rapidamente em outra região AWS próxima (por exemplo, de Irlanda para Frankfurt ou Londres). **Importante** A AWS não oferece IP fixo gratuito em caso de recuperação. Em uma restauração de desastre, o IP mudará, mas atualizaremos os registros DNS e o GitHub o mais rápido possível.
+## ⚠️Anúncio Importante: Pausa no Desenvolvimento do DoH e DoT e Mudança na Infraestrutura 26/06/2025
 
+Gostaríamos de compartilhar algumas atualizações importantes sobre o projeto. Devido a questões de segurança, decidimos pausar o desenvolvimento das funcionalidades de DNS over HTTPS (DoH) e DNS over TLS (DoT). Essa decisão foi tomada para garantir a integridade e a confiabilidade do projeto, enquanto avaliamos e implementamos as correções necessárias. A segurança dos nossos usuários é nossa prioridade, e estamos comprometidos em resolver esses desafios antes de prosseguir. Além disso, informamos que não utilizaremos mais servidores da AWS para hospedar o projeto. Enfrentamos restrições que limitam nossa capacidade de gerenciar e otimizar os servidores de forma eficaz. Estamos explorando alternativas de infraestrutura que ofereçam maior flexibilidade e atendam às necessidades do projeto. Avaliaremos novos provedores de VPS, com foco em opções que permitam maior controle e personalização.
 
