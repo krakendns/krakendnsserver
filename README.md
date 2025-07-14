@@ -60,7 +60,7 @@ resolvectl status
 ```
 **Testar resolução**
 ```bash
-dig @95.179.151.156 google.com
+
 ```
 **Testar latência**
 ```bash
@@ -75,9 +75,9 @@ sudo cp /etc/resolv.conf /etc/resolv.conf.backup
 ```bash
 sudo tee /etc/resolv.conf << EOF
 KrakenDNS Configuration
-nameserver 95.179.151.156
-nameserver 199.247.21.0
-nameserver 45.77.28.252
+nameserver 
+nameserver 
+nameserver 
 options timeout:2
 options attempts:3
 EOF
