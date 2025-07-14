@@ -43,7 +43,7 @@ Filtros anti-phishing atualizados
 **Método Rápido (uma linha)**:
 
 ```bash
-echo "nameserver 45.77.200.109" | sudo tee /etc/resolv.conf
+echo "nameserver " | sudo tee /etc/resolv.conf
 ```
 
 
@@ -52,11 +52,7 @@ echo "nameserver 45.77.200.109" | sudo tee /etc/resolv.conf
 
 **Configurar DNS principal**:
 
-```bash
-sudo systemctl stop systemd-resolved
-echo "DNS=95.179.151.156 199.247.21.0" | sudo tee -a /etc/systemd/network/dns.conf
-sudo systemctl start systemd-resolved
-```
+
 
 **Verificar configuração**
 ```bash
@@ -68,7 +64,7 @@ dig @95.179.151.156 google.com
 ```
 **Testar latência**
 ```bash
-ping -c 4 95.179.151.156
+ping -c 4 
 ```
 **Backup da configuração atual**
 ```bash
@@ -103,14 +99,6 @@ systemctl start NetworkManager
 
 ## Forma recomendada para Pi-hole (modo padrão, porta 53)
 
-```bash
-sudo nano /etc/dnsmasq.d/99-kraken.conf
-
-server=95.179.151.156#53
-server=162.243.238.171#53
-server=167.172.160.4#53
-server=45.77.28.252#53
-server=139.180.135.67#53
 
 pihole restartdns
 ```
@@ -125,39 +113,10 @@ pihole restartdns
 ![image](https://github.com/user-attachments/assets/cac5e622-9d9c-4b67-9096-47d687a61b26)
 
 
-## Mikrotik IP:
-
-
-![image](https://github.com/user-attachments/assets/95b327a1-1b35-4188-b3e7-733fee1b92e0)
-
-![mikrotik 2](https://github.com/user-attachments/assets/346f943f-2920-41a7-bd1b-b090695010a0)
-
-![mikrotik3](https://github.com/user-attachments/assets/17f8a00b-4e77-454b-83ca-faf3f3a22993)
-
-![mikrotik 4](https://github.com/user-attachments/assets/b1a20944-8f7c-41f4-83c6-1c6031f0c956)
-
-![mikrotik 5](https://github.com/user-attachments/assets/43b09db2-5882-4fee-b6d2-6f6d9f79ef0e)
-
-![mikrotik 6](https://github.com/user-attachments/assets/c5be9c38-76e3-4811-be00-c7346e0e671b)
-
-![mikrotik 7](https://github.com/user-attachments/assets/128ea026-7e48-44c5-8af5-c4d826880ba7)
 
 
 
-## TP-Link Huawei:
 
-![huawei](https://github.com/user-attachments/assets/3d87517c-a261-46a9-8467-3176d77817bb)
-
-![tplink-1](https://github.com/user-attachments/assets/3aac3ba1-8a35-4113-8db8-0bef8cc8e010)
-
-
-## Testar o DNS
-
-```bash
-https://dnsleaktest.com/
-
-https://browserleaks.com/dns
-```
 
 ## Criptografia interna
 
@@ -176,7 +135,7 @@ O KrakenDNS implementa a **criptografia interna** Utilizamos DNSCrypt e Cloudfla
 
 ─► **(Consulta DNS)**
 
-─► **[KrakenDNS IP: 45.77.200.109]**
+─► **[KrakenDNS IP: ]**
 
 **[Camada de Segurança]**
 
